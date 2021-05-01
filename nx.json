@@ -1,8 +1,4 @@
 {
-  "npmScope": "catalog-profesii",
-  "affected": {
-    "defaultBase": "master"
-  },
   "implicitDependencies": {
     "workspace.json": "*",
     "package.json": {
@@ -14,6 +10,10 @@
     ".eslintrc.json": "*",
     "nx.json": "*"
   },
+  "affected": {
+    "defaultBase": "main"
+  },
+  "npmScope": "catalog-profesii",
   "tasksRunnerOptions": {
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
@@ -22,9 +22,17 @@
       }
     }
   },
-  "projects": {},
   "workspaceLayout": {
     "appsDir": "packages",
     "libsDir": "packages"
+  },
+  "projects": {
+    "frontend": {
+      "tags": []
+    },
+    "frontend-e2e": {
+      "tags": [],
+      "implicitDependencies": ["frontend"]
+    }
   }
 }
