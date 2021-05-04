@@ -1,8 +1,9 @@
 {
   "version": 1,
   "cli": {
-    "defaultCollection": "@nrwl/workspace"
+    "defaultCollection": "@nrwl/next"
   },
+  "defaultProject": "frontend",
   "schematics": {
     "@nrwl/react": {
       "application": {
@@ -121,6 +122,56 @@
           "builder": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": ["packages/frontend-e2e/**/*.{js,ts}"]
+          }
+        }
+      }
+    },
+    "backend": {
+      "root": "packages/backend",
+      "sourceRoot": "packages/backend/src",
+      "projectType": "application",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/node:build",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/packages/backend",
+            "main": "packages/backend/src/main.ts",
+            "tsConfig": "packages/backend/tsconfig.app.json",
+            "assets": ["packages/backend/src/assets"]
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "extractLicenses": true,
+              "inspect": false,
+              "fileReplacements": [
+                {
+                  "replace": "packages/backend/src/environments/environment.ts",
+                  "with": "packages/backend/src/environments/environment.prod.ts"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@nrwl/node:execute",
+          "options": {
+            "buildTarget": "backend:build"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["packages/backend/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/packages/backend"],
+          "options": {
+            "jestConfig": "packages/backend/jest.config.js",
+            "passWithNoTests": true
           }
         }
       }

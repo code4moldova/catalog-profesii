@@ -26,6 +26,7 @@
   "workspaceLayout": { "appsDir": "packages", "libsDir": "packages" },
   "projects": {
     "frontend": { "tags": [] },
-    "frontend-e2e": { "tags": [], "implicitDependencies": ["frontend"] }
+    "frontend-e2e": { "tags": [], "implicitDependencies": ["frontend"] },
+    "backend": { "tags": [] }
   }
 }
