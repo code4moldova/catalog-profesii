@@ -54,7 +54,7 @@ const DesktopLinks: React.FC = () => {
             <a>Cum aleg profesia?</a>
           </Link>
         </li>
-        <li className="ml-8 bg-gray-200 underline">
+        <li className="ml-8 bg-gray-200 underline py-0.5 px-2">
           <Link href={`#`}>
             <a>РУ</a>
           </Link>
