@@ -26,7 +26,7 @@ const MobileLinks: React.FC = () => {
                 <a>Cum aleg profesia?</a>
               </Link>
             </li>
-            <li className="">
+            <li className="underline">
               <Link href={`#`}>
                 <a>РУ</a>
               </Link>
@@ -54,7 +54,7 @@ const DesktopLinks: React.FC = () => {
             <a>Cum aleg profesia?</a>
           </Link>
         </li>
-        <li className="ml-8">
+        <li className="ml-8 bg-gray-200 underline">
           <Link href={`#`}>
             <a>РУ</a>
           </Link>
@@ -66,8 +66,8 @@ const DesktopLinks: React.FC = () => {
 
 const Header: React.FC = () => {
   return (
-    <header className=" bg-white h-15 py-4 px-4 sm:px-0 shadow-sm md:shadow-none sm:shadow-none">
-      <div className=" max-w-5xl mx-auto my-0 flex items-center justify-between relative">
+    <header className="bg-white h-15 py-4 px-4 sm:px-0 shadow-sm md:shadow-none sm:shadow-none">
+      <div className="max-w-5xl mx-auto my-0 flex items-center justify-between relative">
         <img src="./Logo.svg" alt="" className="" />
 
         <DesktopLinks />
