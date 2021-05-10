@@ -3,17 +3,9 @@
     "README.md"
   ],
   "imageSize": 100,
-  "commit": false,
+  "commit": true,
+  "commitConvention": "angular",
   "contributors": [
-    {
-      "login": "Raduc4",
-      "name": "Raduc4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/55291600?v=4",
-      "profile": "https://github.com/Raduc4",
-      "contributions": [
-        "code"
-      ]
-    },
     {
       "login": "iamandrewluca",
       "name": "Andrew Luca",
@@ -25,6 +17,15 @@
         "example",
         "infra",
         "maintenance"
+      ]
+    },
+    {
+      "login": "Raduc4",
+      "name": "Raduc4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55291600?v=4",
+      "profile": "https://github.com/Raduc4",
+      "contributions": [
+        "code"
       ]
     }
   ],
