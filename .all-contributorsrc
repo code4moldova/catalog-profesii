@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "Raduc4",
+      "name": "Raduc4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55291600?v=4",
+      "profile": "https://github.com/Raduc4",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "catalog-profesii",
+  "projectOwner": "code4moldova",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
