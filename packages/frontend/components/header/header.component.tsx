@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
+import { ReactComponent as CloseIcon } from './assets/close.svg';
+import { ReactComponent as MenuIcon } from './assets/menu.svg';
+import { ReactComponent as LogoIcon } from './assets/Logo.svg';
 
 const MobileLinks: React.FC = () => {
   const [open, setOpen] = useState<boolean>(false);
@@ -8,10 +11,10 @@ const MobileLinks: React.FC = () => {
   };
   return (
     <div className="block sm:hidden">
-      {!open ? (
-        <img src="./menu.svg" alt="" className="w-6" onClick={clickHandler} />
+      {open ? (
+        <CloseIcon className="w-6" onClick={clickHandler} />
       ) : (
-        <img src="./close.svg" alt="" className="w-6" onClick={clickHandler} />
+        <MenuIcon className="w-6" onClick={clickHandler} />
       )}
       {open ? (
         <div className="block sm:hidden absolute mx-auto inset-x-5 top-10 left-0 w-full bg-white">
@@ -64,17 +67,14 @@ const DesktopLinks: React.FC = () => {
   );
 };
 
-const Header: React.FC = () => {
+export const Header: React.FC = () => {
   return (
     <header className="bg-white h-15 py-4 px-4 sm:px-0 shadow-sm md:shadow-none sm:shadow-none">
       <div className="max-w-5xl mx-auto my-0 flex items-center justify-between relative">
-        <img src="./Logo.svg" alt="" className="" />
-
+        <LogoIcon />
         <DesktopLinks />
         <MobileLinks />
       </div>
     </header>
   );
 };
-
-export default Header;
