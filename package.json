@@ -8,6 +8,7 @@
     "fe:test": "nx test frontend",
     "fe:lint": "nx workspace-lint && nx lint frontend",
     "fe:e2e": "nx e2e frontend",
+    "storybook": "nx storybook frontend",
     "be:serve": "nx serve backend",
     "be:build": "nx build backend",
     "be:test": "nx test backend",
