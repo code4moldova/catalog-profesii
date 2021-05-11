@@ -1,35 +1,39 @@
 import React, { useState } from 'react';
+import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { ReactComponent as CloseIcon } from './assets/close.svg';
 import { ReactComponent as MenuIcon } from './assets/menu.svg';
 import { ReactComponent as LogoIcon } from './assets/Logo.svg';
 
+import { Container } from '../grid/container.component';
+
 const MobileLinks: React.FC = () => {
   const [open, setOpen] = useState<boolean>(false);
+
   const clickHandler = () => {
     setOpen(!open);
   };
   return (
     <div className="block sm:hidden">
       {open ? (
-        <CloseIcon className="w-6" onClick={clickHandler} />
+        <CloseIcon className="w-6 h-6" onClick={clickHandler} />
       ) : (
-        <MenuIcon className="w-6" onClick={clickHandler} />
+        <MenuIcon className="w-6 h-6" onClick={clickHandler} />
       )}
       {open ? (
-        <div className="block sm:hidden absolute mx-auto inset-x-5 top-10 left-0 w-full bg-white">
+        <div className="absolute left-0 top-12 bg-white">
           <ul className="">
-            <li className="w-max mb-2">
+            <li>
               <Link href={`#`}>
                 <a>Toate domeniile</a>
               </Link>
             </li>
-            <li className="w-max mb-2">
+            <li className="">
               <Link href={`#`}>
                 <a>Cum aleg profesia?</a>
               </Link>
             </li>
-            <li className="underline">
+            <li className="">
               <Link href={`#`}>
                 <a>РУ</a>
               </Link>
@@ -68,13 +72,19 @@ const DesktopLinks: React.FC = () => {
 };
 
 export const Header: React.FC = () => {
+  const router = useRouter();
   return (
-    <header className="bg-white h-15 py-4 px-4 sm:px-0 shadow-sm md:shadow-none sm:shadow-none">
-      <div className="max-w-5xl mx-auto my-0 flex items-center justify-between relative">
-        <LogoIcon />
+    <Container
+      tag="header"
+      className="h-15 py-4 shadow-sm md:shadow-none sm:shadow-none bg-white"
+    >
+      <div className="flex items-center justify-between relative">
+        <Link href="/">
+          <LogoIcon className="cursor-pointer" />
+        </Link>
         <DesktopLinks />
         <MobileLinks />
       </div>
-    </header>
+    </Container>
   );
 };
