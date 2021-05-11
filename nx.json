@@ -1,13 +1,18 @@
 {
   "implicitDependencies": {
     "workspace.json": "*",
-    "package.json": { "dependencies": "*", "devDependencies": "*" },
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
     "tsconfig.base.json": "*",
     "tslint.json": "*",
     ".eslintrc.json": "*",
     "nx.json": "*"
   },
-  "affected": { "defaultBase": "main" },
+  "affected": {
+    "defaultBase": "main"
+  },
   "npmScope": "catalog-profesii",
   "tasksRunnerOptions": {
     "default": {
@@ -23,10 +28,27 @@
       }
     }
   },
-  "workspaceLayout": { "appsDir": "packages", "libsDir": "packages" },
+  "workspaceLayout": {
+    "appsDir": "packages",
+    "libsDir": "packages"
+  },
   "projects": {
-    "frontend": { "tags": [] },
-    "frontend-e2e": { "tags": [], "implicitDependencies": ["frontend"] },
-    "backend": { "tags": [] }
+    "frontend": {
+      "tags": []
+    },
+    "frontend-e2e": {
+      "tags": [],
+      "implicitDependencies": ["frontend"]
+    },
+    "backend": {
+      "tags": []
+    },
+    "admin": {
+      "tags": []
+    },
+    "admin-e2e": {
+      "tags": [],
+      "implicitDependencies": ["admin"]
+    }
   }
 }
