@@ -10,9 +10,15 @@
 
 ## Repository packages
 
-- `packages/frontend` - user frontend
-- `packages/admin` - administrator frontend
-- `packages/backend` - backend
+- [`packages/frontend`](./packages/frontend) - user frontend
+- [`packages/admin`](./packages/admin) - administrator frontend
+- [`packages/backend`](./packages/backend) - backend
+
+## General info about to use technologies
+
+- [`nx`](https://nx.dev/) - monorepo management
+- [`Next.js`](https://nextjs.org/), [`React`](https://reactjs.org/), [`TypeScript`](https://www.typescriptlang.org/) - frontend
+- [`Nest`](https://nestjs.com/), [`MongoDB`](https://www.mongodb.com/), [`GraphQL`](https://graphql.org/), [`TypeScript`](https://www.typescriptlang.org/) - backend
 
 ## Getting Started 🚀 🚀 🚀
 
