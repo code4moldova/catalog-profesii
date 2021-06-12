@@ -1,10 +1,49 @@
 # CatalogProfesii
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 > https://www.figma.com/file/gkeUv1Rd9IpOIv7DEHjhUS/cariera.md
+
+## Getting Started 🚀🚀🚀
+
+**Clone the repository**
+
+```
+git clone git@github.com:code4moldova/catalog-profesii.git
+cd catalog-profesii
+```
+
+**Install dependencies**
+
+```
+npm install
+```
+
+**Run a command**
+
+```
+# Develop & preview components
+npm run storybook
+```
+
+```
+# Serve & Develop user frontend
+npm run fe:serve
+```
+
+```
+# Serve & Develop administrator frontend
+npm run admin:serve
+```
+
+```
+# Serve & Develop backend
+npm run be:serve
+```
 
 This project was generated using [Nx](https://nx.dev).
 
