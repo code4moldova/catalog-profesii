@@ -8,7 +8,13 @@
 
 > https://www.figma.com/file/gkeUv1Rd9IpOIv7DEHjhUS/cariera.md
 
-## Getting Started 🚀🚀🚀
+## Repository packages
+
+- `packages/frontend` - user frontend
+- `packages/admin` - administrator frontend
+- `packages/backend` - backend
+
+## Getting Started 🚀 🚀 🚀
 
 **Clone the repository**
 
