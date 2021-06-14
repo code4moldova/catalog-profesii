@@ -1,7 +1,7 @@
 {
   "name": "catalog-profesii",
   "version": "0.0.0",
-  "license": "MIT",
+  "license": "MPL-2.0",
   "scripts": {
     "fe:serve": "nx serve frontend",
     "fe:build": "nx build frontend",
