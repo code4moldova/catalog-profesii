@@ -4,77 +4,58 @@ import { ReactComponent as CloseIcon } from './assets/close.svg';
 import { ReactComponent as MenuIcon } from './assets/menu.svg';
 import { ReactComponent as LogoIcon } from './assets/Logo.svg';
 import { Container } from '../grid/container.component';
+import { Row } from '../grid/row.component';
+import { Column } from '../grid/column.component';
 
-const MobileLinks: React.FC = () => {
+export const Header: React.FC = () => {
   const [open, setOpen] = useState(false);
-
   return (
-    <div className="block sm:hidden">
-      {open ? (
-        <CloseIcon className="w-6 h-6" onClick={() => setOpen(false)} />
-      ) : (
-        <MenuIcon className="w-6 h-6" onClick={() => setOpen(true)} />
-      )}
-      {open ? (
-        <div className="absolute left-0 top-12 bg-white">
-          <ul>
-            <li>
-              <Link href={`#`}>
-                <a>Toate domeniile</a>
-              </Link>
-            </li>
-            <li>
-              <Link href={`#`}>
-                <a>Cum aleg profesia?</a>
-              </Link>
-            </li>
-            <li>
-              <Link href={`#`}>
-                <a>РУ</a>
-              </Link>
-            </li>
-          </ul>
-        </div>
-      ) : (
-        <div></div>
-      )}
-    </div>
+    <Container>
+      <Row className="flex justify-between">
+        <LogoIcon />
+        <ul className="flex hidden sm:block">
+          <li>LOL</li>
+          <li>LOL</li>
+          <li>LOL</li>
+        </ul>
+
+        {open ? (
+          <CloseIcon
+            className="w-6 h-6 block sm:hidden"
+            onClick={() => setOpen(false)}
+          />
+        ) : (
+          <MenuIcon
+            className="w-6 h-6 block sm:hidden"
+            onClick={() => setOpen(true)}
+          />
+        )}
+        {open ? (
+          <>
+            <div className="absolute">
+              <input type="text" />
+              <img src="" alt="" />
+            </div>
+            <ul className="block sm:hidden absolute">
+              <li>
+                <Link href={`#`}>
+                  <a>Toate domeniile</a>
+                </Link>
+              </li>
+              <li>
+                <Link href={`#`}>
+                  <a>Cum aleg profesia?</a>
+                </Link>
+              </li>
+              <li>
+                <Link href={`#`}>
+                  <a>РУ</a>
+                </Link>
+              </li>
+            </ul>
+          </>
+        ) : null}
+      </Row>
+    </Container>
   );
 };
-
-const DesktopLinks: React.FC = () => (
-  <div className="hidden sm:block">
-    <ul className="flex items-center max-w-md justify-around">
-      <li>
-        <Link href={`#`}>
-          <a>Toate domeniile</a>
-        </Link>
-      </li>
-      <li className="ml-10">
-        <Link href={`#`}>
-          <a>Cum aleg profesia?</a>
-        </Link>
-      </li>
-      <li className="ml-8 bg-gray-200 underline py-0.5 px-2">
-        <Link href={`#`}>
-          <a>РУ</a>
-        </Link>
-      </li>
-    </ul>
-  </div>
-);
-
-export const Header: React.FC = () => (
-  <Container
-    tag="header"
-    className="h-15 py-4 shadow-sm md:shadow-none sm:shadow-none bg-white"
-  >
-    <div className="flex items-center justify-between relative">
-      <Link href="/">
-        <LogoIcon className="cursor-pointer" />
-      </Link>
-      <DesktopLinks />
-      <MobileLinks />
-    </div>
-  </Container>
-);
