@@ -1,16 +1,15 @@
 import { Meta, Story } from '@storybook/react';
-import { SideCategory as Component } from './side-category.component';
+import { CategoryHeading as Component } from './category-heading.component';
 import { iconItems } from '../../utils/icons-story-helpers';
 import { disableControl } from '../../utils/disable-control';
 
 export default {
-  title: 'Components / Side Category',
+  title: 'Components / Category Heading',
   component: Component,
   argTypes: {
     title: disableControl,
     icon: disableControl,
     color: disableControl,
-    href: disableControl,
     industry: {
       name: 'Industry',
       options: Object.keys(iconItems),
@@ -22,14 +21,14 @@ export default {
   },
 } as Meta;
 
-export const SideCategory: Story = (args) => {
-  const { title, icon, color, href } = iconItems[args.industry];
+export const CategoryHeading: Story = (args) => {
+  const { title, icon, color } = iconItems[args.industry];
 
   return (
-    <div className="grid gap-3 p-3 bg-gray">
-      <Component title={title} icon={icon} color={color} href={href} />
-      <Component title={title} icon={icon} color={color} href={href} />
-      <Component title={title} icon={icon} color={color} href={href} />
+    <div className="grid gap-3 p-3 bg-gray-100">
+      <Component title={title} color={color} icon={icon} />
+      <Component title={title} color={color} icon={icon} />
+      <Component title={title} color={color} icon={icon} />
     </div>
   );
 };
