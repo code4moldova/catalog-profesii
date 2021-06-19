@@ -2,7 +2,8 @@ const colors = require('tailwindcss/colors');
 
 /** @type {import('tailwindcss/tailwind-config').TailwindConfig} */
 module.exports = {
-  mode: 'jit',
+  // TODO: https://github.com/nrwl/nx/issues/5627
+  // mode: 'jit',
   purge: [
     './packages/frontend/pages/**/*.{js,ts,jsx,tsx}',
     './packages/frontend/components/**/*.{js,ts,jsx,tsx}',
@@ -49,7 +50,11 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      backgroundColor: ['active'],
+      borderColor: ['active'],
+      textColor: ['active'],
+    },
   },
   plugins: [],
 };
