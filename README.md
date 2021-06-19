@@ -1,9 +1,7 @@
 # Catalog Profesii
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
-
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 > https://www.figma.com/file/gkeUv1Rd9IpOIv7DEHjhUS/cariera.md
@@ -158,6 +156,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://iamandrewluca.com/"><img src="https://avatars.githubusercontent.com/u/1881266?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Andrew Luca</b></sub></a><br /><a href="https://github.com/code4moldova/catalog-profesii/commits?author=iamandrewluca" title="Code">💻</a> <a href="https://github.com/code4moldova/catalog-profesii/commits?author=iamandrewluca" title="Documentation">📖</a> <a href="#example-iamandrewluca" title="Examples">💡</a> <a href="#infra-iamandrewluca" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#maintenance-iamandrewluca" title="Maintenance">🚧</a></td>
     <td align="center"><a href="https://github.com/Raduc4"><img src="https://avatars.githubusercontent.com/u/55291600?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Raduc4</b></sub></a><br /><a href="https://github.com/code4moldova/catalog-profesii/commits?author=Raduc4" title="Code">💻</a></td>
     <td align="center"><a href="http://lunarboots.com"><img src="https://avatars.githubusercontent.com/u/72382254?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Andrei Valcov</b></sub></a><br /><a href="#design-andreivalcov" title="Design">🎨</a></td>
+    <td align="center"><a href="https://github.com/ion-golovco"><img src="https://avatars.githubusercontent.com/u/27897102?v=4?s=100" width="100px;" alt=""/><br /><sub><b>ion-golovco</b></sub></a><br /><a href="https://github.com/code4moldova/catalog-profesii/commits?author=ion-golovco" title="Code">💻</a></td>
   </tr>
 </table>
 
