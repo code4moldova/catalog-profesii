@@ -6,6 +6,7 @@ type Props = React.PropsWithChildren<{
   style?: React.CSSProperties;
   body?: 'light' | 'regular' | 'button';
 }>;
+
 export const Typography = ({
   tag: Tag,
   className,
