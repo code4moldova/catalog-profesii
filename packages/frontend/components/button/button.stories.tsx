@@ -1,21 +1,20 @@
 import { Meta, Story } from '@storybook/react';
-import { Button as ButtonComponent } from './button.component';
-import { ComponentProps } from 'react';
+import { Button as Component, ButtonProps } from './button.component';
 
 export default {
   title: 'Button',
-  component: ButtonComponent,
+  component: Component,
   args: {
     label: 'Vezi toate profesiile',
   },
 } as Meta;
 
-type StoryProps = ComponentProps<typeof ButtonComponent> & {
+type StoryArgs = ButtonProps & {
   label: string;
 };
 
-export const Button: Story<StoryProps> = ({ label, ...rest }) => (
-  <ButtonComponent {...rest}>
+export const Button: Story<StoryArgs> = ({ label, ...rest }) => (
+  <Component {...rest}>
     <button>{label}</button>
-  </ButtonComponent>
+  </Component>
 );

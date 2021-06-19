@@ -5,14 +5,14 @@ type ButtonVariant = 'contained' | 'outline';
 type ButtonColor = 'blue' | 'darkblue';
 type ButtonSize = 'small' | 'medium' | 'large';
 
-type Props = {
+export type ButtonProps = {
   children: ReactElement;
   variant?: ButtonVariant;
   size?: ButtonSize;
   color?: ButtonColor;
 };
 
-export function Button(props: Props) {
+export function Button(props: ButtonProps) {
   const { children, variant, size, color } = props;
   const child = React.Children.only(children);
 
