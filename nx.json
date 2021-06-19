@@ -33,22 +33,26 @@
     "libsDir": "packages"
   },
   "projects": {
-    "frontend": {
-      "tags": []
-    },
-    "frontend-e2e": {
-      "tags": [],
-      "implicitDependencies": ["frontend"]
-    },
-    "backend": {
-      "tags": []
-    },
     "admin": {
       "tags": []
     },
     "admin-e2e": {
       "tags": [],
-      "implicitDependencies": ["admin"]
+      "implicitDependencies": [
+        "admin"
+      ]
+    },
+    "backend": {
+      "tags": []
+    },
+    "frontend": {
+      "tags": []
+    },
+    "frontend-e2e": {
+      "tags": [],
+      "implicitDependencies": [
+        "frontend"
+      ]
     }
   }
 }
