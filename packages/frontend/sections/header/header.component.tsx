@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { ReactComponent as CloseIcon } from './assets/close.svg';
 import { ReactComponent as MenuIcon } from './assets/menu.svg';
 import { ReactComponent as LogoIcon } from './assets/Logo.svg';
-import { Container } from '../grid/container.component';
+import { Container } from '../../components/grid/container.component';
 
 const MobileLinks: React.FC = () => {
   const [open, setOpen] = useState(false);

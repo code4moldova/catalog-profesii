@@ -2,7 +2,7 @@ import { Meta, Story } from '@storybook/react';
 import { Circle as CircleComponent } from './circle.component';
 
 export default {
-  title: 'Circle',
+  title: 'Components / Circle',
 } as Meta;
 
 export const Circle: Story = () => (

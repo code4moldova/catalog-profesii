@@ -5,7 +5,7 @@ import {
 } from './external-card.component';
 
 export default {
-  title: 'External Card',
+  title: 'Components / External Card',
   component: Component,
   args: {
     href: '#',

@@ -5,7 +5,7 @@ import { Row } from './row.component';
 import { Column } from './column.component';
 
 export default {
-  title: 'Grid',
+  title: 'Components / Grid',
 } as Meta;
 
 export const Grid: Story = () => (

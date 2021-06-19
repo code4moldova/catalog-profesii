@@ -2,7 +2,7 @@ import { Meta, Story } from '@storybook/react';
 import { Button as Component, ButtonProps } from './button.component';
 
 export default {
-  title: 'Button',
+  title: 'Components / Button',
   component: Component,
   args: {
     label: 'Vezi toate profesiile',

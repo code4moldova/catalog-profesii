@@ -1,5 +1,5 @@
 export default {
-  title: 'Header',
+  title: 'Sections / Header',
 };
 
 export { Header } from './header.component';

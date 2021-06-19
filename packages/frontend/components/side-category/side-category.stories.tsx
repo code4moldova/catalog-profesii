@@ -37,7 +37,7 @@ const items: Record<string, SideCategoryProps> = Object.fromEntries(
 );
 
 export default {
-  title: 'Side Category',
+  title: 'Components / Side Category',
   component: Component,
   argTypes: {
     title: disable,

@@ -2,7 +2,7 @@ import React from 'react';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 import 'tailwindcss/tailwind.css';
-import { Header } from '../components/header/header.component';
+import { Header } from '../sections/header/header.component';
 import './styles.css';
 
 function CustomApp({ Component, pageProps }: AppProps) {
