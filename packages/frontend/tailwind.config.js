@@ -15,7 +15,7 @@ module.exports = {
       current: 'currentColor',
       black: colors.black,
       white: colors.white,
-      gray: '#F6F6F6',
+      gray: colors.gray,
       // All colors were extracted from Figma
       blue: {
         100: '#F2F7FF',
