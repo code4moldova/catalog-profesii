@@ -4,6 +4,10 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
+> Storybook  
+> https://main--60cf3c955d8fd8003bd9e414.chromatic.com/
+
+> Figma  
 > https://www.figma.com/file/gkeUv1Rd9IpOIv7DEHjhUS/cariera.md
 
 ## 📦 Repository packages
