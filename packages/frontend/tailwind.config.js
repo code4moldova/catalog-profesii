@@ -1,4 +1,5 @@
 const colors = require('tailwindcss/colors');
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 /** @type {import('tailwindcss/tailwind-config').TailwindConfig} */
 module.exports = {
@@ -10,6 +11,7 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    // We add colors here so we disable all other default Tailwind colors
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
@@ -46,6 +48,19 @@ module.exports = {
         '140': '#DF70C7',
         '150': '#DF709F',
         '160': '#DF7084',
+      },
+    },
+    extend: {
+      fontFamily: {
+        sans: [
+          /**
+           * Font faces for Montserrat were added in files below
+           * Storybook: packages/frontend/.storybook/preview-head.html
+           * Next.js: packages/frontend/pages/_app.tsx
+           */
+          'Montserrat',
+          ...defaultTheme.fontFamily.sans,
+        ],
       },
     },
   },
