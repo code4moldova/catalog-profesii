@@ -62,6 +62,14 @@ module.exports = {
           ...defaultTheme.fontFamily.sans,
         ],
       },
+      lineHeight: {
+        11: '2.75rem',
+        12: '3.00rem',
+        13: '3.25rem',
+        14: '3.50rem',
+        15: '3.75rem',
+        16: '4.00rem',
+      },
     },
   },
   variants: {
