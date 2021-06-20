@@ -37,7 +37,7 @@ const buttonSize = {
   xsmall: 'px-2 py-1.5 text-xs font-medium',
   small: 'px-6 py-2 text-sm font-medium',
   medium: 'px-8 py-3 text-base font-semibold',
-  large: 'px-8 py-4 text-lg font-semibold',
+  large: 'px-8 py-4 font-semibold',
 };
 
 const colorVariant: Record<ButtonColor, Record<ButtonVariant, string>> = {
