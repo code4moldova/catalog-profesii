@@ -3,7 +3,7 @@ import React, { ReactElement } from 'react';
 
 type ButtonVariant = 'contained' | 'outline';
 type ButtonColor = 'blue' | 'darkblue';
-type ButtonSize = 'small' | 'medium' | 'large';
+type ButtonSize = 'xsmall' | 'small' | 'medium' | 'large';
 
 export type ButtonProps = {
   children: ReactElement;
@@ -22,7 +22,7 @@ export function Button(props: ButtonProps) {
 
   return React.cloneElement(child, {
     className: clsx(
-      'outline-none focus:outline-none',
+      'inline-block text-center outline-none focus:outline-none',
       'rounded-md border-2',
       buttonSize[_size],
       colorVariant[_color][_variant],
@@ -32,6 +32,7 @@ export function Button(props: ButtonProps) {
 }
 
 const buttonSize = {
+  xsmall: 'px-2 py-1.5 text-xs font-medium',
   small: 'px-6 py-2 text-sm font-medium',
   medium: 'px-8 py-3 text-base font-semibold',
   large: 'px-8 py-4 text-lg font-semibold',
