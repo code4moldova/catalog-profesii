@@ -3,4 +3,33 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    @apply text-sm;
+  }
+  /* TODO: temporary, find another element for light font */
+  /*em {
+    @apply not-italic;
+    @apply font-light;
+    @apply tracking-tight;
+  }*/
+  h1 {
+    @apply text-4xl;
+    @apply font-semibold;
+    @apply leading-16;
+  }
+  h2 {
+    @apply text-2xl;
+    @apply font-semibold;
+    @apply leading-12;
+  }
+  h3 {
+    @apply text-lg;
+    @apply font-semibold;
+    @apply leading-8;
+  }
+  h4 {
+    @apply text-base;
+    @apply font-medium;
+    @apply leading-6;
+  }
 }
