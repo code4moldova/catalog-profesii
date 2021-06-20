@@ -14,7 +14,29 @@ type StoryArgs = ButtonProps & {
 };
 
 export const Button: Story<StoryArgs> = ({ label, ...rest }) => (
-  <Component {...rest}>
-    <button>{label}</button>
-  </Component>
+  <div className="flex flex-wrap gap-3">
+    <div>
+      <label>Button</label>
+      <br />
+      <Component {...rest}>
+        <button>{label}</button>
+      </Component>
+    </div>
+    <div>
+      <label>Link</label>
+      <br />
+      <Component {...rest}>
+        <a href="https://code4.md" target="_blank">
+          {label}
+        </a>
+      </Component>
+    </div>
+    <div>
+      <label>Tag</label>
+      <br />
+      <Component {...rest}>
+        <span>{label}</span>
+      </Component>
+    </div>
+  </div>
 );
