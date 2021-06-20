@@ -10,10 +10,11 @@ export type ButtonProps = {
   variant?: ButtonVariant;
   size?: ButtonSize;
   color?: ButtonColor;
+  [key: string]: unknown;
 };
 
 export function Button(props: ButtonProps) {
-  const { children, variant, size, color } = props;
+  const { children, variant, size, color, ...rest } = props;
   const child = React.Children.only(children);
 
   const _color: ButtonColor = color ?? 'blue';
@@ -21,6 +22,7 @@ export function Button(props: ButtonProps) {
   const _size: ButtonSize = size ?? 'medium';
 
   return React.cloneElement(child, {
+    ...rest,
     className: clsx(
       'inline-block text-center outline-none focus:outline-none',
       'rounded-md border-2',
