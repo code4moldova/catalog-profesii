@@ -1,7 +1,9 @@
 import { Meta, Story } from '@storybook/react';
 import { SideCategory as Component } from './side-category.component';
-import { iconItems } from '../../utils/icons-story-helpers';
+import { getRainbowColors, iconItems } from '../../utils/icons-story-helpers';
 import { disableControl } from '../../utils/disable-control';
+
+const rainbowColors = getRainbowColors();
 
 export default {
   title: 'Components / Side Category',
@@ -19,17 +21,25 @@ export default {
         type: 'select',
       },
     },
+    border: {
+      name: 'Color',
+      options: rainbowColors,
+      defaultValue: rainbowColors[0],
+      control: {
+        type: 'select',
+      },
+    },
   },
 } as Meta;
 
 export const SideCategory: Story = (args) => {
-  const { title, icon, color, href } = iconItems[args.industry];
+  const { title, icon, href } = iconItems[args.industry];
 
   return (
     <div className="grid gap-3 p-3 bg-gray">
-      <Component title={title} icon={icon} color={color} href={href} />
-      <Component title={title} icon={icon} color={color} href={href} />
-      <Component title={title} icon={icon} color={color} href={href} />
+      <Component title={title} icon={icon} color={args.border} href={href} />
+      <Component title={title} icon={icon} color={args.border} href={href} />
+      <Component title={title} icon={icon} color={args.border} href={href} />
     </div>
   );
 };

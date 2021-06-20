@@ -1,7 +1,9 @@
 import { Meta, Story } from '@storybook/react';
 import { CategoryHeading as Component } from './category-heading.component';
-import { iconItems } from '../../utils/icons-story-helpers';
+import { getRainbowColors, iconItems } from '../../utils/icons-story-helpers';
 import { disableControl } from '../../utils/disable-control';
+
+const rainbowColors = getRainbowColors();
 
 export default {
   title: 'Components / Category Heading',
@@ -18,17 +20,25 @@ export default {
         type: 'select',
       },
     },
+    border: {
+      name: 'Color',
+      options: rainbowColors,
+      defaultValue: rainbowColors[0],
+      control: {
+        type: 'select',
+      },
+    },
   },
 } as Meta;
 
 export const CategoryHeading: Story = (args) => {
-  const { title, icon, color } = iconItems[args.industry];
+  const { title, icon } = iconItems[args.industry];
 
   return (
     <div className="grid gap-3 p-3 bg-gray-100">
-      <Component title={title} color={color} icon={icon} />
-      <Component title={title} color={color} icon={icon} />
-      <Component title={title} color={color} icon={icon} />
+      <Component title={title} color={args.border} icon={icon} />
+      <Component title={title} color={args.border} icon={icon} />
+      <Component title={title} color={args.border} icon={icon} />
     </div>
   );
 };
