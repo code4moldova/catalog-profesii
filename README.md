@@ -1,4 +1,4 @@
-# Catalog Profesii
+# 📚 Catalog Profesii
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
@@ -6,19 +6,19 @@
 
 > https://www.figma.com/file/gkeUv1Rd9IpOIv7DEHjhUS/cariera.md
 
-## Repository packages
+## 📦 Repository packages
 
-- [`packages/frontend`](./packages/frontend) - user frontend
-- [`packages/admin`](./packages/admin) - administrator frontend
-- [`packages/backend`](./packages/backend) - backend
+- 📦 [`packages/frontend`](./packages/frontend) - user frontend
+- 📦 [`packages/admin`](./packages/admin) - administrator frontend
+- 📦 [`packages/backend`](./packages/backend) - backend
 
-## General info about to use technologies
+## ⚙️ General info about to use technologies
 
-- [`nx`](https://nx.dev/) - monorepo management
-- [`Next.js`](https://nextjs.org/), [`React`](https://reactjs.org/), [`TypeScript`](https://www.typescriptlang.org/) - frontend
-- [`Nest`](https://nestjs.com/), [`MongoDB`](https://www.mongodb.com/), [`GraphQL`](https://graphql.org/), [`TypeScript`](https://www.typescriptlang.org/) - backend
+- ⚙ [`nx`](https://nx.dev/) - monorepo management
+- ⚙ [`Next.js`](https://nextjs.org/), [`React`](https://reactjs.org/), [`TypeScript`](https://www.typescriptlang.org/) - frontend
+- ⚙ [`Nest`](https://nestjs.com/), [`MongoDB`](https://www.mongodb.com/), [`GraphQL`](https://graphql.org/), [`TypeScript`](https://www.typescriptlang.org/) - backend
 
-## Getting Started 🚀 🚀 🚀
+## 🚀 Getting Started
 
 **Clone the repository**
 
