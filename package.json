@@ -9,6 +9,7 @@
     "fe:lint": "nx workspace-lint && nx lint frontend",
     "fe:e2e": "nx e2e frontend",
     "storybook": "nx storybook frontend",
+    "build-storybook": "nx build-storybook frontend",
     "admin:serve": "nx serve admin",
     "admin:build": "nx build admin",
     "admin:test": "nx test admin",
@@ -33,7 +34,8 @@
     "dep-graph": "nx dep-graph",
     "help": "nx help",
     "workspace-generator": "nx workspace-generator",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "chromatic": "npx chromatic"
   },
   "private": true,
   "dependencies": {
@@ -87,6 +89,7 @@
     "autoprefixer": "^10.2.5",
     "babel-jest": "26.2.2",
     "babel-loader": "8.1.0",
+    "chromatic": "^5.9.2",
     "cypress": "^6.0.1",
     "dotenv": "8.2.0",
     "eslint": "7.10.0",
