@@ -35,7 +35,7 @@
     "help": "nx help",
     "workspace-generator": "nx workspace-generator",
     "prepare": "husky install",
-    "chromatic": "npx chromatic"
+    "chromatic": "npx chromatic --project-token=0e9747ee5db0"
   },
   "private": true,
   "dependencies": {
