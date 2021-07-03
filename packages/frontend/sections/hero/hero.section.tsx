@@ -1,26 +1,22 @@
 import React from 'react';
 import { Button } from '../../components/button/button.component';
-import Link from 'next/link';
-import { Container } from '../../components/grid/container.component';
+import { Column, Container, Row } from '../../components/grid';
+import heroImage from './assets/hero-image.svg';
 
-import heroImage from './assets/Frame.svg';
-import { Row } from '../../components/grid/row.component';
-import { Column } from '../../components/grid/column.component';
-
-export const Hero = () => {
+export function Hero() {
   return (
-    <section className="bg-blue-100 pt-">
+    <section className="bg-blue-100">
       <Container>
-        <Row className="items-center py-hero">
-          <Column className="md:w-1/2">
-            <h1 className="leading-14 font-bold tracking-wide text-5xl sm:text-center md:text-left">
+        <Row className="items-center py-10 lg:py-28">
+          <Column className="w-full md:w-1/2">
+            <h1 className="sm:text-center md:text-left leading-12 font-bold tracking-wide">
               Fă o alegere conștientă în viitoarea profesie
             </h1>
             <p className="font-medium text-sm mt-3.5 sm:text-center md:text-left">
               Am pregătit informații utile ca să-ți ușurăm alegerea viitoarei
               profesii. Consultă-te cu resursele afișate pe site.
             </p>
-            <div className="flex sm:items-center md:justify-start justify-center  mb-20 mt-10">
+            <div className="flex sm:items-center md:justify-start justify-center mb-10 lg:mb-0 mt-10">
               <Button variant="contained" size="large" color="blue">
                 <a href={'#'}>Vezi toate profesiile</a>
               </Button>
@@ -32,9 +28,11 @@ export const Hero = () => {
               </Button>
             </div>
           </Column>
-          <img src={heroImage} alt="" className="mx-auto md:mx-0" />
+          <Column className="w-full md:w-1/2">
+            <img src={heroImage} alt="" className="mx-auto md:mx-0" />
+          </Column>
         </Row>
       </Container>
     </section>
   );
-};
+}
