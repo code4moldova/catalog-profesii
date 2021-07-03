@@ -34,8 +34,7 @@
     "dep-graph": "nx dep-graph",
     "help": "nx help",
     "workspace-generator": "nx workspace-generator",
-    "prepare": "husky install",
-    "chromatic": "npx chromatic --project-token=0e9747ee5db0"
+    "prepare": "husky install"
   },
   "private": true,
   "dependencies": {

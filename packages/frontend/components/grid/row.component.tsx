@@ -1,14 +1,9 @@
 import React from 'react';
 import clsx from 'clsx';
 
-export function Row({
-  children,
-  className,
-}: {
-  children: React.ReactNode;
-  className?: string;
-}) {
-  return (
-    <div className={clsx('flex flex-wrap -mx-3', className)}>{children}</div>
-  );
+const classes = 'flex flex-wrap -mx-3';
+
+export function Row(props: JSX.IntrinsicElements['div']) {
+  const { className, ...rest } = props;
+  return <div className={clsx(classes, className)} {...rest} />;
 }

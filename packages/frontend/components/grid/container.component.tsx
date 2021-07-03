@@ -1,15 +1,9 @@
 import React from 'react';
 import clsx from 'clsx';
 
-type Props = React.PropsWithChildren<{
-  className?: string;
-  tag?: keyof JSX.IntrinsicElements;
-}>;
+const classes = 'lg:container mx-auto px-5';
 
-export function Container({ children, className, tag: Tag = 'div' }: Props) {
-  return (
-    <Tag className={clsx('lg:container mx-auto px-3', className)}>
-      {children}
-    </Tag>
-  );
+export function Container(props: JSX.IntrinsicElements['div']) {
+  const { className, ...rest } = props;
+  return <div className={clsx(classes, className)} {...rest} />;
 }
