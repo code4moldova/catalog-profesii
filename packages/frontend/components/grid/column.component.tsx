@@ -1,10 +1,9 @@
 import React from 'react';
 import clsx from 'clsx';
 
-type Props = React.PropsWithChildren<{
-  className?: string;
-}>;
+const classes = 'px-3';
 
-export function Column({ children, className }: Props) {
-  return <div className={clsx('px-3', className)}>{children}</div>;
+export function Column(props: JSX.IntrinsicElements['div']) {
+  const { className, ...rest } = props;
+  return <div className={clsx(classes, className)} {...rest} />;
 }

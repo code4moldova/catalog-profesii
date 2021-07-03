@@ -3,7 +3,7 @@ import { AppProps } from 'next/app';
 import Head from 'next/head';
 import '../tailwind.css';
 
-import { Header } from '../sections/header/header.component';
+import { Header } from '../sections/header/header.section';
 
 function CustomApp({ Component, pageProps }: AppProps) {
   return (
