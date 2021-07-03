@@ -1,5 +1,5 @@
 import { Meta, Story } from '@storybook/react';
-import { ArrowLink as Component } from './arrow-link';
+import { ArrowLink as Component } from './arrow-link.component';
 
 export default {
   title: 'Components / Arrow Link',
