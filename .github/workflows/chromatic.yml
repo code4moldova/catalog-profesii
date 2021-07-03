@@ -6,6 +6,10 @@ name: 'Chromatic'
 # Event for the workflow
 on: push
 
+env:
+  # yes yes, not secure
+  CHROMATIC_PROJECT_TOKEN: '0e9747ee5db0'
+
 # List of jobs
 jobs:
   chromatic-deployment:
