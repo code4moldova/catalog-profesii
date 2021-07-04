@@ -45,6 +45,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "johnsmithm",
+      "name": "Moșnoi Ion",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10476109?v=4",
+      "profile": "http://www.linkedin.com/in/ion-mosnoi",
+      "contributions": [
+        "infra"
+      ]
     }
   ],
   "contributorsPerLine": 7,
