@@ -51,9 +51,6 @@ module.exports = {
       },
     },
     extend: {
-      padding: {
-        hero: '7.5rem',
-      },
       fontFamily: {
         sans: [
           /**
