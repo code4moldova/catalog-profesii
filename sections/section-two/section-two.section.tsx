@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Column, Container, Row } from '../../components/grid';
 import jobHunt from './assets/1JobHunting.svg';
 import resume from './assets/2resume.svg';
@@ -39,7 +40,7 @@ export function SectionTwo(props: JSX.IntrinsicElements['section']) {
 }
 
 type CardData = {
-  image: string;
+  image: StaticImageData;
   title: string;
   subtitle: string;
   alt: string;
@@ -85,7 +86,7 @@ const data: CardData[] = [
 function Card({ title, subtitle, link, linkText, alt, image }: CardData) {
   return (
     <div className="pt-11 pb-9">
-      <img src={image} alt={alt} className="block mx-auto" />
+      <Image src={image} alt={alt} className="block mx-auto" />
       <h2
         style={{ fontFamily: 'Montserrat' }}
         className="text-base my-4 font-semibold"
@@ -95,7 +96,7 @@ function Card({ title, subtitle, link, linkText, alt, image }: CardData) {
       <p className="text-base font-light leading-6 w-72 sm:w-64 mb-6">
         {subtitle}
       </p>
-      {linkText ? (
+      {linkText && link ? (
         <Link href={link}>
           <a className="text-sm text-blue-400 ">{linkText}</a>
         </Link>

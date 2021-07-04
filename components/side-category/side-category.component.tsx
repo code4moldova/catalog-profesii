@@ -1,4 +1,5 @@
 import clsx from 'clsx';
+import Image from 'next/image';
 
 export type SideCategoryProps = {
   href?: string;
@@ -15,7 +16,7 @@ export function SideCategory(props: SideCategoryProps) {
       href={href}
       className={clsx('flex items-center p-5 bg-white border-l-4', color)}
     >
-      <img src={icon} alt={title} className="w-10 h-10" />
+      <Image src={icon} alt={title} width={40} height={40} />
       <p className="ml-5 font-bold">{title}</p>
     </a>
   );

@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import clsx from 'clsx';
 import { Row, Container, Column } from '../../components/grid';
 import codeForMoldova from './assets/code-for-moldova.svg';
@@ -20,7 +21,12 @@ export function Footer(props: JSX.IntrinsicElements['section']) {
                 rel="noreferrer noopener"
                 className="inline-block"
               >
-                <img src={codeForMoldova} alt="code for moldova logo" />
+                <Image
+                  src={codeForMoldova}
+                  width={100}
+                  height={50}
+                  alt="code for moldova logo"
+                />
               </a>
               <p>
                 Organizație neguvernamentală <br />

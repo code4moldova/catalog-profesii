@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export type ExternalCardProps = {
   href: string;
   header: string;
@@ -15,11 +17,9 @@ export function ExternalCard(props: ExternalCardProps) {
       rel="noreferrer"
     >
       {icon && (
-        <img
-          src={icon}
-          alt={header}
-          className="rounded-md overflow-hidden object-cover w-24 h-24 flex-shrink-0"
-        />
+        <div className="rounded-md overflow-hidden w-24 h-24 flex-shrink-0 relative">
+          <Image src={icon} alt={header} layout="fill" />
+        </div>
       )}
 
       {!icon && (

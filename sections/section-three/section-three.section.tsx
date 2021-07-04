@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { Column, Container, Row } from '../../components/grid';
 import img1 from './assets/1.svg';
 import img2 from './assets/2.svg';
@@ -30,7 +31,7 @@ export function SectionThree(props: JSX.IntrinsicElements['section']) {
 }
 
 type CardData = {
-  icon: string;
+  icon: StaticImageData;
   title: string;
   buttonText: string;
   buttonLink: string;
@@ -40,7 +41,7 @@ type CardData = {
 function Card({ icon, title, buttonText, buttonLink, description }: CardData) {
   return (
     <div className="bg-white py-9 px-5 h-full">
-      <img src={icon} alt="" className="mb-4" />
+      <Image src={icon} alt="" className="mb-4" />
       <h3 className="font-semibold text-base mb-2">{title}</h3>
       <Button size="xsmall" variant="outline">
         <a href={buttonLink}>{buttonText}</a>

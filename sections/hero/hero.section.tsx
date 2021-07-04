@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { Button } from '../../components/button/button.component';
 import { Column, Container, Row } from '../../components/grid';
 import heroImage from './assets/hero-image.svg';
@@ -29,7 +30,7 @@ export function Hero() {
             </div>
           </Column>
           <Column className="w-full md:w-1/2">
-            <img src={heroImage} alt="" className="mx-auto md:mx-0" />
+            <Image src={heroImage} alt="" className="mx-auto md:mx-0" />
           </Column>
         </Row>
       </Container>

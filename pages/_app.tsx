@@ -4,6 +4,7 @@ import Head from 'next/head';
 import '../tailwind.css';
 
 import { Header } from '../sections/header/header.section';
+import { Footer } from '../sections/footer/footer.section';
 
 function CustomApp({ Component, pageProps }: AppProps) {
   return (
@@ -17,11 +18,10 @@ function CustomApp({ Component, pageProps }: AppProps) {
         />
       </Head>
       <Header />
-      <div className="app">
-        <main>
-          <Component {...pageProps} />
-        </main>
-      </div>
+      <main>
+        <Component {...pageProps} />
+      </main>
+      <Footer />
     </>
   );
 }
