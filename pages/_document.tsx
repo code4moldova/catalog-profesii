@@ -6,7 +6,6 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <title>Catalog Profesii!</title>
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
             rel="stylesheet"

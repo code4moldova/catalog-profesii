@@ -9,6 +9,9 @@ import { Footer } from '../sections/footer/footer.section';
 function CustomApp({ Component, pageProps }: AppProps) {
   return (
     <>
+      <Head>
+        <title>Catalog Profesii!</title>
+      </Head>
       <Header />
       <main>
         <Component {...pageProps} />

@@ -10,82 +10,98 @@ export const Circle: Story = () => (
     <CircleComponent
       borderColor="border-rainbow-010"
       textColor="text-rainbow-010"
-      children="010"
-    />
+    >
+      010
+    </CircleComponent>
     <CircleComponent
       borderColor="border-rainbow-020"
       textColor="text-rainbow-020"
-      children="020"
-    />
+    >
+      020
+    </CircleComponent>
     <CircleComponent
       borderColor="border-rainbow-030"
       textColor="text-rainbow-030"
-      children="030"
-    />
+    >
+      030
+    </CircleComponent>
     <CircleComponent
       borderColor="border-rainbow-040"
       textColor="text-rainbow-040"
-      children="040"
-    />
+    >
+      040
+    </CircleComponent>
     <CircleComponent
       borderColor="border-rainbow-050"
       textColor="text-rainbow-050"
-      children="050"
-    />
+    >
+      050
+    </CircleComponent>
     <CircleComponent
       borderColor="border-rainbow-060"
       textColor="text-rainbow-060"
-      children="060"
-    />
+    >
+      060
+    </CircleComponent>
     <CircleComponent
       borderColor="border-rainbow-070"
       textColor="text-rainbow-070"
-      children="070"
-    />
+    >
+      070
+    </CircleComponent>
     <CircleComponent
       borderColor="border-rainbow-080"
       textColor="text-rainbow-080"
-      children="080"
-    />
+    >
+      080
+    </CircleComponent>
     <CircleComponent
       borderColor="border-rainbow-090"
       textColor="text-rainbow-090"
-      children="090"
-    />
+    >
+      090
+    </CircleComponent>
     <CircleComponent
       borderColor="border-rainbow-100"
       textColor="text-rainbow-100"
-      children="100"
-    />
+    >
+      100
+    </CircleComponent>
     <CircleComponent
       borderColor="border-rainbow-110"
       textColor="text-rainbow-110"
-      children="110"
-    />
+    >
+      110
+    </CircleComponent>
     <CircleComponent
       borderColor="border-rainbow-120"
       textColor="text-rainbow-120"
-      children="120"
-    />
+    >
+      120
+    </CircleComponent>
     <CircleComponent
       borderColor="border-rainbow-130"
       textColor="text-rainbow-130"
-      children="130"
-    />
+    >
+      130
+    </CircleComponent>
     <CircleComponent
       borderColor="border-rainbow-140"
       textColor="text-rainbow-140"
-      children="140"
-    />
+    >
+      140
+    </CircleComponent>
     <CircleComponent
       borderColor="border-rainbow-150"
       textColor="text-rainbow-150"
-      children="150"
-    />
+    >
+      150
+    </CircleComponent>
     <CircleComponent
       borderColor="border-rainbow-160"
       textColor="text-rainbow-160"
-      children="160"
-    />
+    >
+      160
+    </CircleComponent>
   </div>
 );
