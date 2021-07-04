@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { ReactComponent as CloseIcon } from './assets/close.svg';
-import { ReactComponent as MenuIcon } from './assets/menu.svg';
-import { ReactComponent as LogoIcon } from './assets/Logo.svg';
+import Image from 'next/image';
+import { ReactComponent as CloseIcon } from './assets/close';
+import { ReactComponent as MenuIcon } from './assets/menu';
+import { ReactComponent as LogoIcon } from './assets/Logo';
 import search from './assets/search.svg';
 import { Container } from '../../components/grid';
 
@@ -31,11 +32,8 @@ const MobileLinks: React.FC = () => {
               placeholder="Căutare profesie"
               className="border-none outline-none w-72 py-2.5 pl-4 pr-3 "
             />
-            <img
-              src={search}
-              alt=""
-              style={{ marginLeft: 'auto', marginRight: '1rem' }}
-            />
+            {/* eslint-disable @next/next/no-img-element */}
+            <img src={search} alt="" className="ml-auto mr-4" />
           </div>
           <ul className="mx-auto text-center ">
             <li className="mt-2">
@@ -88,7 +86,9 @@ export function Header(props: JSX.IntrinsicElements['header']) {
       <Container className="h-15 py-4 shadow-sm md:shadow-none sm:shadow-none bg-white flex items-center justify-between">
         <div className="flex items-center">
           <Link href="/">
-            <LogoIcon className="cursor-pointer" />
+            <a>
+              <LogoIcon className="cursor-pointer" />
+            </a>
           </Link>
 
           <div className="flex border-2 rounded-md md:ml-10 sm:ml-10 ">
@@ -97,12 +97,8 @@ export function Header(props: JSX.IntrinsicElements['header']) {
               placeholder="Căutare profesie"
               className="border-none outline-none w-42 hidden md:block py-2.5 pl-4 pr-3"
             />
-            <img
-              src={search}
-              alt=""
-              className="hidden md:block pr-3"
-              style={{ marginLeft: 'auto' }}
-            />
+            {/* eslint-disable @next/next/no-img-element */}
+            <img src={search} alt="" className="hidden md:block pr-3 ml-auto" />
           </div>
         </div>
         <DesktopLinks />

@@ -1,10 +1,7 @@
 import * as Icons from '../icons';
 
-const unCamelCase = (str) => str.replace(/([a-z])([A-Z])/g, '$1 $2');
+const unCamelCase = (str: string) => str.replace(/([a-z])([A-Z])/g, '$1 $2');
 
-// TODO: see why Object.fromEntries is complaining
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
 export const iconItems: Record<string, any> = Object.fromEntries(
   Object.entries(Icons).map(([key, value]) => [
     key,

@@ -1,4 +1,4 @@
 module.exports = {
-  stories: [],
-  addons: ['@storybook/addon-essentials'],
+  stories: ['../**/*.stories.mdx', '../**/*.stories.@(js|jsx|ts|tsx)'],
+  addons: ['@storybook/addon-essentials', '@storybook/addon-postcss'],
 };

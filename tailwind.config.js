@@ -3,11 +3,11 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 
 /** @type {import('tailwindcss/tailwind-config').TailwindConfig} */
 module.exports = {
-  // TODO: https://github.com/nrwl/nx/issues/5627
   // mode: 'jit',
   purge: [
-    './packages/frontend/pages/**/*.{js,ts,jsx,tsx}',
-    './packages/frontend/components/**/*.{js,ts,jsx,tsx}',
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+    './sections/**/*.{js,ts,jsx,tsx}',
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
