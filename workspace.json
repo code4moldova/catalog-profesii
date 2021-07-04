@@ -18,64 +18,6 @@
     }
   },
   "projects": {
-    "backend": {
-      "root": "packages/backend",
-      "sourceRoot": "packages/backend/src",
-      "projectType": "application",
-      "architect": {
-        "build": {
-          "builder": "@nrwl/node:build",
-          "outputs": [
-            "{options.outputPath}"
-          ],
-          "options": {
-            "outputPath": "dist/packages/backend",
-            "main": "packages/backend/src/main.ts",
-            "tsConfig": "packages/backend/tsconfig.app.json",
-            "assets": [
-              "packages/backend/src/assets"
-            ]
-          },
-          "configurations": {
-            "production": {
-              "optimization": true,
-              "extractLicenses": true,
-              "inspect": false,
-              "fileReplacements": [
-                {
-                  "replace": "packages/backend/src/environments/environment.ts",
-                  "with": "packages/backend/src/environments/environment.prod.ts"
-                }
-              ]
-            }
-          }
-        },
-        "serve": {
-          "builder": "@nrwl/node:execute",
-          "options": {
-            "buildTarget": "backend:build"
-          }
-        },
-        "lint": {
-          "builder": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": [
-              "packages/backend/**/*.ts"
-            ]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/packages/backend"
-          ],
-          "options": {
-            "jestConfig": "packages/backend/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
     "frontend": {
       "root": "packages/frontend",
       "sourceRoot": "packages/frontend",
@@ -83,9 +25,7 @@
       "architect": {
         "build": {
           "builder": "@nrwl/next:build",
-          "outputs": [
-            "{options.outputPath}"
-          ],
+          "outputs": ["{options.outputPath}"],
           "options": {
             "root": "packages/frontend",
             "outputPath": "dist/packages/frontend"
@@ -115,9 +55,7 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/packages/frontend"
-          ],
+          "outputs": ["coverage/packages/frontend"],
           "options": {
             "jestConfig": "packages/frontend/jest.config.js",
             "passWithNoTests": true
@@ -126,9 +64,7 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "packages/frontend/**/*.{ts,tsx,js,jsx}"
-            ]
+            "lintFilePatterns": ["packages/frontend/**/*.{ts,tsx,js,jsx}"]
           }
         },
         "storybook": {
@@ -148,9 +84,7 @@
         },
         "build-storybook": {
           "builder": "@nrwl/storybook:build",
-          "outputs": [
-            "{options.outputPath}"
-          ],
+          "outputs": ["{options.outputPath}"],
           "options": {
             "uiFramework": "@storybook/react",
             "outputPath": "dist/storybook/frontend",
@@ -187,9 +121,7 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "packages/frontend-e2e/**/*.{js,ts}"
-            ]
+            "lintFilePatterns": ["packages/frontend-e2e/**/*.{js,ts}"]
           }
         }
       }
