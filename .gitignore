@@ -32,5 +32,7 @@ yarn-error.log*
 
 # vercel
 .vercel
+
 .idea
 .eslintcache
+storybook-static
