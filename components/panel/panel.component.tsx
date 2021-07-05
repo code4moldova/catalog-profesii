@@ -15,7 +15,7 @@ export function Panel(props: PanelProps) {
     <section>
       <div
         onClick={() => setCollapsed(!collapsed)}
-        className="flex justify-between items-center py-4 px-5 border-b border-gray-200 "
+        className="flex justify-between items-center py-4 px-5 border-b border-gray-200 cursor-pointer"
       >
         <h3 className="text-xl font-medium leading-none">{title}</h3>
         {collapsable && (
@@ -26,7 +26,7 @@ export function Panel(props: PanelProps) {
             viewBox="0 0 20 13"
             fill="none"
             className={clsx(
-              'transform transition-transform duration-300 ease-in-out',
+              'transform transition-all duration-300 ease-in-out',
               !collapsed && 'rotate-180',
               collapsed && 'rotate-90'
             )}
@@ -40,9 +40,9 @@ export function Panel(props: PanelProps) {
       </div>
       <div
         className={clsx(
-          'p-4 transform origin-top transition-transform duration-500 ease-in-out overflow-hidden',
-          collapsed && 'scale-y-0',
-          !collapsed && 'scale-y-1'
+          'px-4 transform origin-top transition-all duration-300 overflow-hidden',
+          collapsed && 'max-h-0 py-0',
+          !collapsed && 'max-h-screen py-4'
         )}
       >
         {children}

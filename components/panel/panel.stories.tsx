@@ -11,10 +11,52 @@ export default {
 } as Meta;
 
 export const Panel: Story<PanelProps> = (args) => (
-  <Component {...args}>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic nam soluta
-    tenetur unde. Architecto dolore eveniet excepturi voluptatem! Ab beatae
-    debitis inventore modi, officiis porro quam quibusdam similique totam
-    veritatis.
-  </Component>
+  <>
+    <Component {...args}>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic nam soluta
+      tenetur unde. Architecto dolore eveniet excepturi voluptatem! Ab beatae
+      debitis inventore modi, officiis porro quam quibusdam similique totam
+      veritatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic
+      nam soluta tenetur unde. Architecto dolore eveniet excepturi voluptatem!
+      Ab beatae debitis inventore modi, officiis porro quam quibusdam similique
+      totam veritatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Hic nam soluta tenetur unde. Architecto dolore eveniet excepturi
+      voluptatem! Ab beatae debitis inventore modi, officiis porro quam
+      quibusdam similique totam veritatis. Lorem ipsum dolor sit amet,
+      consectetur adipisicing elit. Hic nam soluta tenetur unde. Architecto
+      dolore eveniet excepturi voluptatem! Ab beatae debitis inventore modi,
+      officiis porro quam quibusdam similique totam veritatis. Lorem ipsum dolor
+      sit amet, consectetur adipisicing elit. Hic nam soluta tenetur unde.
+      Architecto dolore eveniet excepturi voluptatem! Ab beatae debitis
+      inventore modi, officiis porro quam quibusdam similique totam veritatis.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic nam soluta
+      tenetur unde. Architecto dolore eveniet excepturi voluptatem! Ab beatae
+      debitis inventore modi, officiis porro quam quibusdam similique totam
+      veritatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic
+      nam soluta tenetur unde. Architecto dolore eveniet excepturi voluptatem!
+      Ab beatae debitis inventore modi, officiis porro quam quibusdam similique
+      totam veritatis.
+    </Component>
+
+    <Component {...args}>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic nam soluta
+      tenetur unde. Architecto dolore eveniet excepturi voluptatem! Ab beatae
+      debitis inventore modi, officiis porro quam quibusdam similique totam
+      veritatis.
+    </Component>
+
+    <Component {...args}>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic nam soluta
+      tenetur unde. Architecto dolore eveniet excepturi voluptatem! Ab beatae
+      debitis inventore modi, officiis porro quam quibusdam similique totam
+      veritatis.
+    </Component>
+
+    <Component {...args}>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic nam soluta
+      tenetur unde. Architecto dolore eveniet excepturi voluptatem! Ab beatae
+      debitis inventore modi, officiis porro quam quibusdam similique totam
+      veritatis.
+    </Component>
+  </>
 );
