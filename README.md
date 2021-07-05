@@ -1,7 +1,7 @@
 # 📚 Catalog Profesii
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 > Storybook  
@@ -77,6 +77,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/ion-golovco"><img src="https://avatars.githubusercontent.com/u/27897102?v=4?s=100" width="100px;" alt=""/><br /><sub><b>ion-golovco</b></sub></a><br /><a href="https://github.com/code4moldova/catalog-profesii/commits?author=ion-golovco" title="Code">💻</a></td>
     <td align="center"><a href="http://www.linkedin.com/in/ion-mosnoi"><img src="https://avatars.githubusercontent.com/u/10476109?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Moșnoi Ion</b></sub></a><br /><a href="#infra-johnsmithm" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
     <td align="center"><a href="https://github.com/mihaelataranu7"><img src="https://avatars.githubusercontent.com/u/62308267?v=4?s=100" width="100px;" alt=""/><br /><sub><b>mihaela</b></sub></a><br /><a href="#business-mihaelataranu7" title="Business development">💼</a></td>
+    <td align="center"><a href="http://sergiu.io"><img src="https://avatars.githubusercontent.com/u/10156144?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sergiu Ravliuc</b></sub></a><br /><a href="https://github.com/code4moldova/catalog-profesii/commits?author=YoSoySergio" title="Code">💻</a></td>
   </tr>
 </table>
 
