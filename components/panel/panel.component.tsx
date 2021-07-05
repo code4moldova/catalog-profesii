@@ -14,7 +14,7 @@ export function Panel(props: PanelProps) {
   return (
     <section>
       <div
-        onClick={() => setCollapsed(!collapsed)}
+        onClick={() => collapsable && setCollapsed(!collapsed)}
         className="flex justify-between items-center py-4 px-5 border-b border-gray-200 cursor-pointer"
       >
         <h3 className="text-xl font-medium leading-none">{title}</h3>
