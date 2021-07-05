@@ -7,8 +7,8 @@ export default {
   args: {
     title: 'Solicită ajutor de la profesioniști',
     collapsable: true,
-  } as PanelProps,
-} as Meta;
+  },
+} as Meta<PanelProps>;
 
 export const Panel: Story<PanelProps> = (args) => (
   <>
