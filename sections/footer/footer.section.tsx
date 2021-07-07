@@ -5,11 +5,11 @@ import clsx from 'clsx';
 import { Row, Container, Column } from '../../components/grid';
 import codeForMoldova from './assets/code-for-moldova.svg';
 
-export function Footer(props: JSX.IntrinsicElements['section']) {
+export function Footer(props: JSX.IntrinsicElements['footer']) {
   const { className, ...rest } = props;
 
   return (
-    <section className={clsx('bg-white', className)} {...rest}>
+    <footer className={clsx('bg-white', className)} {...rest}>
       <Container>
         <Row className="pt-12 pb-4">
           <Column className="w-full sm:w-1/2 md:w-1/3 mb-10 md:mb-0">
@@ -86,6 +86,6 @@ export function Footer(props: JSX.IntrinsicElements['section']) {
           profesii.md © {new Date().getFullYear()}
         </div>
       </Container>
-    </section>
+    </footer>
   );
 }
