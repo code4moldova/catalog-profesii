@@ -11,8 +11,8 @@ export function Footer(props: JSX.IntrinsicElements['section']) {
   return (
     <section className={clsx('bg-white', className)} {...rest}>
       <Container>
-        <Row className="py-12">
-          <Column className="w-full sm:w-1/2 md:w-1/3 mb-10 lg:mb-0">
+        <Row className="pt-12 pb-4">
+          <Column className="w-full sm:w-1/2 md:w-1/3 mb-10 md:mb-0">
             <div className="p-6 space-y-1.5 border border-gray-100 shadow-md text-sm text-gray-400 inline-block mx-auto">
               <p>Creat de</p>
               <a
@@ -34,7 +34,7 @@ export function Footer(props: JSX.IntrinsicElements['section']) {
               </p>
             </div>
           </Column>
-          <Column className="w-full sm:w-1/2 md:w-1/3 mb-10 lg:mb-0 md:flex justify-center">
+          <Column className="w-full sm:w-1/2 md:w-1/3 mb-10 md:mb-0 md:flex justify-center lg:justify-start">
             <ul className="space-y-1">
               <li>
                 <Link href="/cum-aleg-cariera">
@@ -83,7 +83,7 @@ export function Footer(props: JSX.IntrinsicElements['section']) {
           </Column>
         </Row>
         <div className="text-center text-gray-500 text-xs py-5">
-          profesii.md © 2021
+          profesii.md © {new Date().getFullYear()}
         </div>
       </Container>
     </section>
