@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { Button } from '../../components/button/button.component';
 import { Column, Container, Row } from '../../components/grid';
 import heroImage from './assets/hero-image.svg';
+import Link from 'next/link';
 
 export function Hero() {
   return (
@@ -18,15 +19,17 @@ export function Hero() {
               profesii. Consultă-te cu resursele afișate pe site.
             </p>
             <div className="flex sm:items-center md:justify-start justify-center mb-10 lg:mb-0 mt-10">
-              <Button variant="contained" size="large" color="blue">
-                <a href={'#'}>Vezi toate profesiile</a>
-              </Button>
+              <Link href="/toate-domeniile" passHref>
+                <Button variant="contained" size="large" color="blue">
+                  <a>Vezi toate profesiile</a>
+                </Button>
+              </Link>
 
-              <Button variant="contained" size="large" color="darkblue">
-                <a className="ml-2.5" href={'#'}>
-                  Nu știu ce profesie să aleg
-                </a>
-              </Button>
+              <Link href="/cum-aleg-profesia" passHref>
+                <Button variant="contained" size="large" color="darkblue">
+                  <a className="ml-2.5">Nu știu ce profesie să aleg</a>
+                </Button>
+              </Link>
             </div>
           </Column>
           <Column className="w-full md:w-1/2">

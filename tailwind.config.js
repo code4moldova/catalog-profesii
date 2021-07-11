@@ -79,5 +79,5 @@ module.exports = {
       textColor: ['active'],
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/aspect-ratio')],
 };
