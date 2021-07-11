@@ -9,11 +9,11 @@ const HowToAdvices: React.FC<howToUseGuidedDataArray> = ({ data }) => {
     <Row>
       {data.map((item: howToUseGuidedData, index: number) => (
         <Column className="mx-auto w-full sm:w-1/2 md:w-1/3 mt-12" key={index}>
-          {/* <Image
+          <Image
             src={item.image}
             alt={item.image_alt}
             className="mx-auto mb-6"
-          /> */}
+          />
 
           <span className="mt-7 font-light text-sm w-2">{item.title}</span>
           {item.list_type === 'ordered' ? (
