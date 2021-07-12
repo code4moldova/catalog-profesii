@@ -37,7 +37,7 @@ export function Footer(props: JSX.IntrinsicElements['footer']) {
           <Column className="w-full sm:w-1/2 md:w-1/3 mb-10 md:mb-0 md:flex justify-center lg:justify-start">
             <ul className="space-y-1">
               <li>
-                <Link href="/cum-aleg-cariera">
+                <Link href="/cum-aleg-profesia">
                   <a className="font-medium text-sm">Cum aleg cariera?</a>
                 </Link>
               </li>

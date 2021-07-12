@@ -36,12 +36,12 @@ const MobileLinks: React.FC = () => {
           </div>
           <ul className="mx-auto text-center ">
             <li className="mt-2">
-              <Link href={`#`}>
+              <Link href="/toate-domeniile">
                 <a className="w-4">Toate domeniile</a>
               </Link>
             </li>
             <li className="mt-2">
-              <Link href={`#`}>
+              <Link href="/cum-aleg-profesia">
                 <a className="w-4">Cum aleg profesia?</a>
               </Link>
             </li>
@@ -61,12 +61,12 @@ const DesktopLinks: React.FC = () => (
   <div className="hidden md:block">
     <ul className="flex items-center max-w-md justify-around">
       <li className="text-sm">
-        <Link href={`#`}>
+        <Link href="/toate-domeniile">
           <a>Toate domeniile</a>
         </Link>
       </li>
       <li className="ml-10 text-sm">
-        <Link href={`#`}>
+        <Link href="/cum-aleg-profesia">
           <a>Cum aleg profesia?</a>
         </Link>
       </li>

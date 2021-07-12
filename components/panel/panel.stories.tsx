@@ -2,7 +2,7 @@ import { Meta, Story } from '@storybook/react';
 import { Panel as Component, PanelProps } from './panel.component';
 
 export default {
-  title: 'Components / Collapsable Panel',
+  title: 'Components / Panel',
   component: Component,
   args: {
     title: 'Solicită ajutor de la profesioniști',
