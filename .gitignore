@@ -38,3 +38,10 @@ yarn-error.log*
 .eslintcache
 storybook-static
 contentful-data.json
+
+# IDE GraphQL Generated
+.graphqlconfig
+schema.graphql
+
+# codegen generated
+graphql.ts

@@ -1,0 +1,17 @@
+overwrite: true
+schema:
+  - "https://graphql.contentful.com/content/v1/spaces/${CONTENTFUL_SPACE_ID}/environments/${CONTENTFUL_ENVIRONMENT}":
+      headers:
+        Authorization: "Bearer ${CONTENTFUL_ACCESS_TOKEN}"
+documents: "**/*.graphql"
+generates:
+  ./graphql.ts:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"
+      - "fragment-matcher"
+
+hooks:
+  afterOneFileWrite:
+    - prettier --write
