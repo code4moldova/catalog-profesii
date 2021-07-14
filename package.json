@@ -65,7 +65,13 @@
     "url": "git@github.com:code4moldova/catalog-profesii.git"
   },
   "release": {
-    "branches": "main",
+    "branches": [
+      "production",
+      {
+        "name": "next",
+        "prerelease": "alpha"
+      }
+    ],
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
