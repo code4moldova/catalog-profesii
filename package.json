@@ -1,6 +1,6 @@
 {
   "name": "catalog-profesii",
-  "version": "0.1.0",
+  "version": "0.0.0-development",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -12,7 +12,8 @@
     "prepare": "husky install",
     "contentful-pull": "node scripts/contentful.js pull",
     "contentful-push": "node scripts/contentful.js push",
-    "codegen": "graphql-codegen -r dotenv/config --config codegen.yml"
+    "codegen": "graphql-codegen -r dotenv/config --config codegen.yml",
+    "semantic-release": "semantic-release"
   },
   "dependencies": {
     "@apollo/client": "^3.3.21",
@@ -30,6 +31,8 @@
     "@graphql-codegen/typescript": "1.23.0",
     "@graphql-codegen/typescript-operations": "1.18.4",
     "@graphql-codegen/typescript-react-apollo": "2.3.1",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
     "@storybook/addon-actions": "^6.3.4",
     "@storybook/addon-essentials": "^6.3.4",
     "@storybook/addon-postcss": "^2.0.0",
@@ -49,11 +52,26 @@
     "lint-staged": "^11.0.0",
     "postcss": "^8.3.5",
     "prettier": "^2.3.2",
+    "semantic-release": "^17.4.4",
     "tailwindcss": "^2.2.4",
     "typescript": "4.3.5"
   },
   "lint-staged": {
     "*.{js,ts,jsx,tsx}": "eslint --cache --fix",
     "*.{js,ts,jsx,tsx,css,md}": "prettier --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:code4moldova/catalog-profesii.git"
+  },
+  "release": {
+    "branches": "main",
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/git",
+      "@semantic-release/github"
+    ]
   }
 }
