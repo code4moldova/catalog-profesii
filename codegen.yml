@@ -1,15 +1,43 @@
 overwrite: true
 schema:
-  - "https://graphql.contentful.com/content/v1/spaces/${CONTENTFUL_SPACE_ID}/environments/${CONTENTFUL_ENVIRONMENT}":
+  - "https://graphql.contentful.com/content/v1/spaces/${NEXT_PUBLIC_CONTENTFUL_SPACE_ID}/environments/${NEXT_PUBLIC_CONTENTFUL_ENVIRONMENT}":
       headers:
-        Authorization: "Bearer ${CONTENTFUL_ACCESS_TOKEN}"
-documents: "**/*.graphql"
+        Authorization: "Bearer ${NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN}"
+
 generates:
-  ./graphql.ts:
+  ./generated/types.ts:
+    config: &fullSharedConfig
+      avoidOptionals: true
+      nonOptionalTypename: true
+      immutableTypes: true
+      maybeValue: T
+      onlyOperationTypes: true
+      flattenGeneratedTypes: true
+      preResolveTypes: true
+      strictScalars: true
+      defaultScalarType: unknown
+      scalars:
+        DateTime: string
+        Dimension: number
+        HexColor: string
+        Quality: number
     plugins:
+      - add:
+          content: "// noinspection JSUnusedGlobalSymbols\n"
       - "typescript"
+  ./:
+    documents: "**/*.graphql"
+    preset: near-operation-file
+    presetConfig:
+      baseTypesPath: ./generated/types.ts
+    config: *fullSharedConfig
+    plugins:
+      - add:
+          content: "// noinspection JSUnusedGlobalSymbols\n"
       - "typescript-operations"
       - "typescript-react-apollo"
+  ./generated/possible-types.ts:
+    plugins:
       - "fragment-matcher"
 
 hooks:
