@@ -1,3 +1,9 @@
+# [1.0.0-alpha.2](https://github.com/code4moldova/catalog-profesii/compare/v1.0.0-alpha.1...v1.0.0-alpha.2) (2021-07-15)
+
+### Bug Fixes
+
+- **components:** forward Button ref ([55dd86b](https://github.com/code4moldova/catalog-profesii/commit/55dd86b275b1cd53146b83515ac35fe4c87fb5b5))
+
 # 1.0.0-alpha.1 (2021-07-14)
 
 ### Bug Fixes
