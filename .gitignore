@@ -44,4 +44,5 @@ contentful-data.json
 schema.graphql
 
 # codegen generated
-graphql.ts
+generated
+*.generated.ts
