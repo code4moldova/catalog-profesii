@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import React, { ReactElement } from 'react';
+import React, { forwardRef, ReactElement } from 'react';
 
 type ButtonVariant = 'contained' | 'outline';
 type ButtonColor = 'blue' | 'darkblue';
@@ -13,7 +13,7 @@ export type ButtonProps = {
   [key: string]: unknown;
 };
 
-export function Button(props: ButtonProps) {
+export const Button = forwardRef(function Button(props: ButtonProps, ref) {
   const { children, variant, size, color, ...rest } = props;
   const child = React.Children.only(children);
 
@@ -24,6 +24,7 @@ export function Button(props: ButtonProps) {
   return React.cloneElement(child, {
     ...rest,
     className: clsx(
+      ref,
       'inline-block text-center outline-none focus:outline-none',
       'rounded-md border-2',
       buttonSize[_size],
@@ -31,7 +32,7 @@ export function Button(props: ButtonProps) {
       child.props.className
     ),
   });
-}
+});
 
 const buttonSize = {
   xsmall: 'px-2 py-1.5 text-xs font-medium',
