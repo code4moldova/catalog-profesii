@@ -55,8 +55,8 @@ module.exports = {
         sans: [
           /**
            * Font faces for Montserrat were added in files below
-           * Storybook: packages/frontend/.storybook/preview-head.html
-           * Next.js: packages/frontend/pages/_app.tsx
+           * Storybook: .storybook/preview-head.html
+           * Next.js: pages/_app.tsx
            */
           'Montserrat',
           ...defaultTheme.fontFamily.sans,

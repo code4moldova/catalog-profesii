@@ -10,7 +10,7 @@ const contentfulImport = require('contentful-import');
 const command = process.argv[2];
 
 const options = {
-  spaceId: process.env.CONTENTFUL_SPACE_ID,
+  spaceId: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
   managementToken: process.env.CONTENTFUL_MANAGEMENT_TOKEN,
   contentFile: 'contentful-data.json',
 };
