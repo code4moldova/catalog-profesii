@@ -7,7 +7,7 @@ import img3 from './assets/3.svg';
 import { Button } from '../../components/button/button.component';
 import clsx from 'clsx';
 
-export function SectionThree(props: JSX.IntrinsicElements['section']) {
+export function HomeSectionTwo(props: JSX.IntrinsicElements['section']) {
   const { className, ...rest } = props;
   return (
     <section {...rest} className={clsx('pt-16 pb-20 bg-gray-100', className)}>
@@ -41,7 +41,7 @@ type CardData = {
 function Card({ icon, title, buttonText, buttonLink, description }: CardData) {
   return (
     <div className="bg-white py-9 px-5 h-full">
-      <Image src={icon} alt="" className="mb-4" />
+      <Image src={icon} alt="" className="mb-4" width={75} height={75} />
       <h3 className="font-semibold text-base mb-2">{title}</h3>
       <Button size="xsmall" variant="outline">
         <a href={buttonLink}>{buttonText}</a>

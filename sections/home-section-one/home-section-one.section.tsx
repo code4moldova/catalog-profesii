@@ -8,7 +8,7 @@ import locatingJob from './assets/3location.svg';
 import findingJob from './assets/4Find.svg';
 import clsx from 'clsx';
 
-export function SectionTwo(props: JSX.IntrinsicElements['section']) {
+export function HomeSectionOne(props: JSX.IntrinsicElements['section']) {
   const { className, ...rest } = props;
   return (
     <section {...rest} className={clsx('bg-white', className)}>
@@ -86,7 +86,13 @@ const data: CardData[] = [
 function Card({ title, subtitle, link, linkText, alt, image }: CardData) {
   return (
     <div className="pt-11 pb-9">
-      <Image src={image} alt={alt} className="block mx-auto" />
+      <Image
+        src={image}
+        alt={alt}
+        className="block mx-auto"
+        width={200}
+        height={200}
+      />
       <h2
         style={{ fontFamily: 'Montserrat' }}
         className="text-base my-4 font-semibold"

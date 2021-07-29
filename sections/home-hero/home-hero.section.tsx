@@ -5,7 +5,7 @@ import { Column, Container, Row } from '../../components/grid';
 import heroImage from './assets/hero-image.svg';
 import Link from 'next/link';
 
-export function Hero() {
+export function HomeHero() {
   return (
     <section className="bg-blue-100">
       <Container>
@@ -33,7 +33,14 @@ export function Hero() {
             </div>
           </Column>
           <Column className="w-full md:w-1/2">
-            <Image src={heroImage} alt="" className="mx-auto md:mx-0" />
+            <Image
+              src={heroImage}
+              width={410}
+              height={410}
+              alt=""
+              layout="responsive"
+              className="mx-auto md:mx-0"
+            />
           </Column>
         </Row>
       </Container>
