@@ -1,3 +1,15 @@
+# [1.0.0-alpha.3](https://github.com/code4moldova/catalog-profesii/compare/v1.0.0-alpha.2...v1.0.0-alpha.3) (2021-10-02)
+
+### Bug Fixes
+
+- change logo to profesii.md ([d540ebc](https://github.com/code4moldova/catalog-profesii/commit/d540ebca01b2aac117b3afdbd6c473bc6de70bed))
+- **home:** adjust section two links ([#94](https://github.com/code4moldova/catalog-profesii/issues/94)) ([e4f89fa](https://github.com/code4moldova/catalog-profesii/commit/e4f89fab98f0b79d0456dd702907c60789a5b075))
+
+### Features
+
+- add section two for guide page ([#93](https://github.com/code4moldova/catalog-profesii/issues/93)) ([3134107](https://github.com/code4moldova/catalog-profesii/commit/31341070e572af2c216981bbf9afcb144850efa1))
+- create new card component variation ([#92](https://github.com/code4moldova/catalog-profesii/issues/92)) ([2c25c7e](https://github.com/code4moldova/catalog-profesii/commit/2c25c7ee3665a659254548484dc0fcd07913bbe3))
+
 # [1.0.0-alpha.2](https://github.com/code4moldova/catalog-profesii/compare/v1.0.0-alpha.1...v1.0.0-alpha.2) (2021-07-15)
 
 ### Bug Fixes
