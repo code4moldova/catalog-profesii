@@ -1,14 +1,16 @@
 # 📚 Catalog Profesii
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 > Storybook  
 > https://main--60cf3c955d8fd8003bd9e414.chromatic.com/
 
 > Figma  
-> https://www.figma.com/file/gkeUv1Rd9IpOIv7DEHjhUS/cariera.md
+> https://www.figma.com/file/gkeUv1Rd9IpOIv7DEHjhUS/profesii.md
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
