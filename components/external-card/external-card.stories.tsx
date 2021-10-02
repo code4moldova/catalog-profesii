@@ -12,8 +12,8 @@ export default {
     header: 'Marketing',
     icon: 'https://picsum.photos/seed/external-card/512/512',
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
-  } as ExternalCardProps,
-} as Meta;
+  },
+} as Meta<ExternalCardProps>;
 
 export const ExternalCard: Story<ExternalCardProps> = (args) => (
   <Component {...args} />
