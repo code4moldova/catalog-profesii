@@ -14,7 +14,7 @@ type Props = {
   button_redirect_link: string;
 };
 
-export const CardAndFriends = ({
+export function Card({
   image,
   image_alt,
   title,
@@ -24,7 +24,7 @@ export const CardAndFriends = ({
   host_platform_link,
   button_text,
   button_redirect_link,
-}: Props) => {
+}: Props) {
   return (
     <div className="rounded-lg border-2 w-80">
       <Image src={image} width={380} height={120} alt={image_alt} />
@@ -59,4 +59,4 @@ export const CardAndFriends = ({
       </div>
     </div>
   );
-};
+}

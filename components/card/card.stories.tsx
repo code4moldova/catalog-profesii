@@ -1,8 +1,10 @@
 import { Story, Meta } from '@storybook/react';
-import { CardAndFriends } from '../card-and-friends/card-and-friends.component';
+import { Card as Component } from './card.component';
 import image1 from './assets/Top.png';
+
 export default {
-  title: 'Card&friends',
+  title: 'Components / Card',
+  component: Component,
 } as Meta;
 
 const cardAndFriendsData = {
@@ -18,6 +20,6 @@ const cardAndFriendsData = {
   button_redirect_link: 'https://dreamfoundation.eu',
 };
 
-export const CardAndFriendsComponent: Story = () => {
-  return <CardAndFriends {...cardAndFriendsData} />;
+export const Card: Story = () => {
+  return <Component {...cardAndFriendsData} />;
 };

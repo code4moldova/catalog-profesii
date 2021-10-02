@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "start-storybook -p 6006",
+    "sb": "npm run storybook",
     "build-storybook": "build-storybook",
     "prepare": "husky install",
     "contentful-pull": "node scripts/contentful.js pull",
