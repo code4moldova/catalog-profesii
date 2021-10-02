@@ -56,7 +56,7 @@ const data: CardData[] = [
       'Acest catalog te va informa despre toate oportunitățile în alegerea unei cariere. Cu toții știm că există multe tipuri de doctori, dar știai că există zeci de tipuri de programiști?',
     alt: 'Catalogul profesiilor',
     linkText: 'Vezi catalogul',
-    link: '#',
+    link: '/toate-domeniile',
   },
   {
     image: resume,
@@ -72,7 +72,7 @@ const data: CardData[] = [
       'Consultă-te cu ghidul nostru pentru a învăța o structură eficientă în alegerea unei cariere și pregătirea pentru aceasta.',
     alt: 'Ghid în alegerea profesiei',
     linkText: 'Vezi ghidul',
-    link: '#',
+    link: '/cum-aleg-profesia',
   },
   {
     image: findingJob,
