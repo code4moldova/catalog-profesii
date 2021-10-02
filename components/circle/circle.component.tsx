@@ -30,7 +30,7 @@ export function Circle(props: Props) {
   return (
     <span
       className={clsx(
-        'inline-block rounded-full inline-flex items-center justify-center',
+        'inline-block rounded-full inline-flex items-center justify-center flex-shrink-0',
         borderColor,
         textColor,
         backgroundColor,

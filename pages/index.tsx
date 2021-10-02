@@ -1,13 +1,13 @@
-import { Hero } from '../sections/hero/hero.section';
-import { SectionTwo } from '../sections/section-two/section-two.section';
-import { SectionThree } from '../sections/section-three/section-three.section';
+import { HomeHero } from '../sections/home-hero/home-hero.section';
+import { HomeSectionOne } from '../sections/home-section-one/home-section-one.section';
+import { HomeSectionTwo } from '../sections/home-section-two/home-section-two.section';
 
 export function Index() {
   return (
     <>
-      <Hero />
-      <SectionTwo />
-      <SectionThree />
+      <HomeHero />
+      <HomeSectionOne />
+      <HomeSectionTwo />
     </>
   );
 }
