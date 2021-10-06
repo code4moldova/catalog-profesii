@@ -14,7 +14,7 @@ export type ButtonProps = {
 };
 
 export const Button = forwardRef(function Button(props: ButtonProps, ref) {
-  const { children, variant, size, color, ...rest } = props;
+  const { children, variant, size, color, className, ...rest } = props;
   const child = React.Children.only(children);
 
   const _color: ButtonColor = color ?? 'blue';
@@ -23,8 +23,9 @@ export const Button = forwardRef(function Button(props: ButtonProps, ref) {
 
   return React.cloneElement(child, {
     ...rest,
+    ref,
     className: clsx(
-      ref,
+      className as string,
       'inline-block text-center outline-none focus:outline-none',
       'rounded-md border-2',
       buttonSize[_size],
