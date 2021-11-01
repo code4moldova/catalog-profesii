@@ -1,5 +1,9 @@
 import clsx from 'clsx';
-import React, { forwardRef, ReactElement } from 'react';
+import React, {
+  forwardRef,
+  ReactElement,
+  ForwardRefRenderFunction,
+} from 'react';
 
 type ButtonVariant = 'contained' | 'outline';
 type ButtonColor = 'blue' | 'darkblue';
@@ -13,7 +17,10 @@ export type ButtonProps = {
   [key: string]: unknown;
 };
 
-export const Button = forwardRef(function Button(props: ButtonProps, ref) {
+const ButtonRender: ForwardRefRenderFunction<HTMLElement, ButtonProps> = (
+  props,
+  ref
+) => {
   const { children, variant, size, color, className, ...rest } = props;
   const child = React.Children.only(children);
 
@@ -33,7 +40,9 @@ export const Button = forwardRef(function Button(props: ButtonProps, ref) {
       child.props.className
     ),
   });
-});
+};
+
+export const Button = forwardRef(ButtonRender);
 
 const buttonSize = {
   xsmall: 'px-2 py-1.5 text-xs font-medium',

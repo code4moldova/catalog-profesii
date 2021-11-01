@@ -1,8 +1,12 @@
-import React from 'react';
+import { forwardRef, ForwardRefRenderFunction } from 'react';
 
-export function ArrowLink({ children, ...rest }: JSX.IntrinsicElements['a']) {
+const ArrowLinkRender: ForwardRefRenderFunction<
+  HTMLAnchorElement,
+  JSX.IntrinsicElements['a']
+> = (props, ref) => {
+  const { children, ...rest } = props;
   return (
-    <a {...rest}>
+    <a {...rest} ref={ref}>
       <svg
         width="0.6em"
         height="0.6em"
@@ -14,4 +18,6 @@ export function ArrowLink({ children, ...rest }: JSX.IntrinsicElements['a']) {
       {children}
     </a>
   );
-}
+};
+
+export const ArrowLink = forwardRef(ArrowLinkRender);
