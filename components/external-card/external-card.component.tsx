@@ -14,7 +14,7 @@ export function ExternalCard(props: ExternalCardProps) {
       className="flex rounded-lg border p-5"
       href={href}
       target="_blank"
-      rel="noreferrer"
+      rel="noopener nofollow noreferrer"
     >
       {icon && (
         <div className="rounded-md overflow-hidden w-24 h-24 flex-shrink-0 relative">

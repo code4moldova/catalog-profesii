@@ -1,13 +1,12 @@
 import { Column, Container, Row } from '../../components/grid';
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
 import Link from 'next/link';
-import { MainProps } from '../_app';
 import clsx from 'clsx';
 import { SideCategory } from '../../components/side-category/side-category.component';
 import { Button } from '../../components/button/button.component';
 import { ArrowLink } from '../../components/arrow-link/arrow-link.component';
 
-type Props = MainProps & {
+type Props = {
   items: Category[];
   domenii: Category[];
   domeniu: string | null;
@@ -18,7 +17,7 @@ const AllJobs: NextPage<Props> = (props) => {
   const { items, tags, domenii, domeniu: selected } = props;
 
   return (
-    <Container>
+    <Container className="py-12">
       <Row>
         <Column className="w-1/4">
           <div>
@@ -89,7 +88,6 @@ export const getStaticProps: GetStaticProps<Props, Params> = async (
   context
 ) => ({
   props: {
-    mainClass: 'bg-gray-100 shadow-inner py-12',
     items,
     tags,
     domenii,
