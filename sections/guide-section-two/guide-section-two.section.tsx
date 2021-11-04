@@ -8,7 +8,7 @@ import { Button } from '../../components/button/button.component';
 export function GuideSectionTwo(props: JSX.IntrinsicElements['section']) {
   const { className, ...rest } = props;
   return (
-    <section className={clsx('pt-12 pb-14', className)} {...rest}>
+    <section className={clsx('pt-12 pb-14 bg-white', className)} {...rest}>
       <Container>
         <Row className="justify-center">
           <Column className="lg:w-10/12 xl:w-8/12">

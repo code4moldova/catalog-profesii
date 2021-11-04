@@ -4,14 +4,8 @@ import '../tailwind.css';
 
 import { Header } from '../sections/header/header.section';
 import { Footer } from '../sections/footer/footer.section';
-import clsx from 'clsx';
 
-export type MainProps = {
-  mainClass?: string;
-};
-
-function CustomApp({ Component, pageProps }: AppProps<MainProps>) {
-  const { mainClass, ...rest } = pageProps as MainProps;
+function CustomApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
@@ -19,8 +13,8 @@ function CustomApp({ Component, pageProps }: AppProps<MainProps>) {
       </Head>
       <div className="min-h-screen flex flex-col">
         <Header />
-        <main className={clsx('flex-grow', mainClass)}>
-          <Component {...rest} />
+        <main className="flex-grow bg-gray-100 shadow-inner">
+          <Component {...pageProps} />
         </main>
         <Footer />
       </div>

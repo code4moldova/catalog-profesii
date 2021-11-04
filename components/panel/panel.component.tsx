@@ -1,10 +1,10 @@
-import { useState } from 'react';
+import { ReactChild, ReactNode, useState } from 'react';
 import clsx from 'clsx';
 
 export type PanelProps = {
-  title: string;
-  collapsable: boolean;
-  children: string;
+  title: ReactChild;
+  collapsable?: boolean;
+  children: ReactNode;
 };
 
 export function Panel(props: PanelProps) {
@@ -12,12 +12,14 @@ export function Panel(props: PanelProps) {
   const [collapsed, setCollapsed] = useState(false);
 
   return (
-    <section>
+    <section className="bg-white">
       <div
         onClick={() => collapsable && setCollapsed(!collapsed)}
         className="flex justify-between items-center py-4 px-5 border-b border-gray-200 cursor-pointer"
       >
-        <h3 className="text-xl font-medium leading-none">{title}</h3>
+        <h3 className="text-xl font-medium leading-none flex items-center">
+          {title}
+        </h3>
         {collapsable && (
           <svg
             xmlns="http://www.w3.org/2000/svg"

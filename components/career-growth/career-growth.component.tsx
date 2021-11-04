@@ -10,7 +10,7 @@ export const CareerGrowth = (props: Props) => (
     <ul className="flex min-w-max">
       {props.jobs.map((job, jobIndex) => (
         <li key={jobIndex}>
-          <div className="min-w-[8rem] flex items-center mb-2">
+          <div className="min-w-[10rem] flex items-center mb-2">
             {job.future ? emptyCircle : filledCircle}
             {jobIndex < props.jobs.length - 1 && (
               <hr className="border-black flex-grow" />
