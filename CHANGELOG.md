@@ -1,3 +1,16 @@
+# [1.0.0-alpha.4](https://github.com/code4moldova/catalog-profesii/compare/v1.0.0-alpha.3...v1.0.0-alpha.4) (2021-11-04)
+
+### Bug Fixes
+
+- **Button:** adjust ref forwarding ([bce6cfd](https://github.com/code4moldova/catalog-profesii/commit/bce6cfdb7a0b97aea977a7c3a9468b02235760dc))
+
+### Features
+
+- add single job page layout ([#97](https://github.com/code4moldova/catalog-profesii/issues/97)) ([51b0266](https://github.com/code4moldova/catalog-profesii/commit/51b0266d9f7786adb4fe4851800d40dcf2d2b652))
+- add toate-domeniile layout with fake data ([e125f76](https://github.com/code4moldova/catalog-profesii/commit/e125f762ccd30b4390c9119f5191f884a78eaa1d))
+- create career growth component ([#99](https://github.com/code4moldova/catalog-profesii/issues/99)) ([7ed54ba](https://github.com/code4moldova/catalog-profesii/commit/7ed54badfa9d273a9c0465ba0f19c8b9021ddebc))
+- create salary growth component ([#98](https://github.com/code4moldova/catalog-profesii/issues/98)) ([ddf13d9](https://github.com/code4moldova/catalog-profesii/commit/ddf13d97dda734274e9c8d2fb4862558e8e44c1c))
+
 # [1.0.0-alpha.3](https://github.com/code4moldova/catalog-profesii/compare/v1.0.0-alpha.2...v1.0.0-alpha.3) (2021-10-02)
 
 ### Bug Fixes
