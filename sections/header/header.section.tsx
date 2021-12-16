@@ -5,7 +5,7 @@ import { ReactComponent as MenuIcon } from './assets/menu';
 import { ReactComponent as LogoIcon } from './assets/Logo';
 import { Container } from '../../components/grid';
 
-interface props {
+interface Props {
   open: boolean;
 }
 
