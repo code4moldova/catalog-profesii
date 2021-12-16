@@ -9,7 +9,7 @@ interface Props {
   open: boolean;
 }
 
-const MobileLinks: React.FC<props> = ({ open }) => {
+const MobileLinks: React.FC<Props> = ({ open }) => {
   return (
     <>
       {open ? (
