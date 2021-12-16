@@ -5,25 +5,15 @@ import { ReactComponent as MenuIcon } from './assets/menu';
 import { ReactComponent as LogoIcon } from './assets/Logo';
 import { Container } from '../../components/grid';
 
-const MobileLinks: React.FC = () => {
-  const [open, setOpen] = useState(false);
+interface props {
+  open: boolean;
+}
 
+const MobileLinks: React.FC<props> = ({ open }) => {
   return (
     <>
       {open ? (
-        <CloseIcon
-          className="w-6 h-6 block md:hidden"
-          onClick={() => setOpen(false)}
-        />
-      ) : (
-        <MenuIcon
-          className="w-6 h-6 block md:hidden"
-          onClick={() => setOpen(true)}
-        />
-      )}
-
-      {open ? (
-        <div className="absolute left-4 top-20 bg-white block md:hidden mx-auto px-8 right-4">
+        <div className="absolute top-14 bg-white md:hidden px-8 py-8 w-screen ">
           <div className="flex rounded-md border-2">
             <input
               type="text"
@@ -80,10 +70,11 @@ const DesktopLinks: React.FC = () => (
 );
 
 export function Header(props: JSX.IntrinsicElements['header']) {
+  const [open, setOpen] = useState<boolean>(false);
   return (
-    <header {...props}>
+    <header {...props} className="z-[100]">
       <Container className="h-15 py-4 shadow-sm md:shadow-none sm:shadow-none bg-white flex items-center justify-between">
-        <div className="flex items-center">
+        <div className="flex items-center justify-between">
           <Link href="/">
             <a>
               <LogoIcon className="cursor-pointer" />
@@ -102,8 +93,19 @@ export function Header(props: JSX.IntrinsicElements['header']) {
           </div>
         </div>
         <DesktopLinks />
-        <MobileLinks />
+        {open ? (
+          <CloseIcon
+            className="w-6 h-6 block md:hidden"
+            onClick={() => setOpen(false)}
+          />
+        ) : (
+          <MenuIcon
+            className="w-6 h-6 block md:hidden"
+            onClick={() => setOpen(true)}
+          />
+        )}
       </Container>
+      <MobileLinks open={open} />
     </header>
   );
 }
