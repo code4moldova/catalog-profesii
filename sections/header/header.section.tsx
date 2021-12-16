@@ -5,25 +5,16 @@ import { ReactComponent as MenuIcon } from './assets/menu';
 import { ReactComponent as LogoIcon } from './assets/Logo';
 import { Container } from '../../components/grid';
 
-const MobileLinks: React.FC = () => {
-  const [open, setOpen] = useState(false);
+interface props {
+  open: boolean;
+  setOpen(value: boolean): void;
+}
 
+const MobileLinks: React.FC<props> = ({ open, setOpen }) => {
   return (
     <>
       {open ? (
-        <CloseIcon
-          className="w-6 h-6 block md:hidden"
-          onClick={() => setOpen(false)}
-        />
-      ) : (
-        <MenuIcon
-          className="w-6 h-6 block md:hidden"
-          onClick={() => setOpen(true)}
-        />
-      )}
-
-      {open ? (
-        <div className="absolute left-4 top-20 bg-white block md:hidden mx-auto px-8 right-4">
+        <div className="absolute top-14 bg-white md:hidden px-8 py-8 w-screen ">
           <div className="flex rounded-md border-2">
             <input
               type="text"
@@ -35,17 +26,17 @@ const MobileLinks: React.FC = () => {
             </div>
           </div>
           <ul className="mx-auto text-center ">
-            <li className="mt-2">
+            <li className="mt-2" onClick={() => setOpen(false)}>
               <Link href="/toate-domeniile">
                 <a className="w-4">Toate domeniile</a>
               </Link>
             </li>
-            <li className="mt-2">
+            <li className="mt-2" onClick={() => setOpen(false)}>
               <Link href="/cum-aleg-profesia">
                 <a className="w-4">Cum aleg profesia?</a>
               </Link>
             </li>
-            <li className="mt-2">
+            <li className="mt-2" onClick={() => setOpen(false)}>
               <Link href={`#`}>
                 <a className="bg-gray-200 underline py-0.5 px-2">РУ</a>
               </Link>
@@ -80,10 +71,11 @@ const DesktopLinks: React.FC = () => (
 );
 
 export function Header(props: JSX.IntrinsicElements['header']) {
+  const [open, setOpen] = useState<boolean>(false);
   return (
-    <header {...props}>
+    <header {...props} className="z-[100]">
       <Container className="h-15 py-4 shadow-sm md:shadow-none sm:shadow-none bg-white flex items-center justify-between">
-        <div className="flex items-center">
+        <div className="flex items-center justify-between">
           <Link href="/">
             <a>
               <LogoIcon className="cursor-pointer" />
@@ -102,8 +94,19 @@ export function Header(props: JSX.IntrinsicElements['header']) {
           </div>
         </div>
         <DesktopLinks />
-        <MobileLinks />
+        {open ? (
+          <CloseIcon
+            className="w-6 h-6 block md:hidden"
+            onClick={() => setOpen(false)}
+          />
+        ) : (
+          <MenuIcon
+            className="w-6 h-6 block md:hidden"
+            onClick={() => setOpen(true)}
+          />
+        )}
       </Container>
+      <MobileLinks open={open} setOpen={setOpen} />
     </header>
   );
 }
