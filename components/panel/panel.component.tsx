@@ -44,7 +44,7 @@ export function Panel(props: PanelProps) {
         className={clsx(
           'px-4 transform origin-top transition-all duration-300 overflow-hidden',
           collapsed && 'max-h-0 py-0',
-          !collapsed && 'max-h-screen py-4'
+          !collapsed && 'py-4'
         )}
       >
         {children}

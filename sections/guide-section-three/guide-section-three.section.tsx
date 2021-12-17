@@ -7,6 +7,13 @@ import { Button } from '../../components/button/button.component';
 import { Panel } from '../../components/panel/panel.component';
 import { ExternalCard } from '../../components/external-card/external-card.component';
 
+// Icons
+import Building from '../../icons/guide-section-three/building-house.svg';
+import Psycho from '../../icons/guide-section-three/psicholog.svg';
+import Mentor from '../../icons/guide-section-three/mentor.svg';
+import Rabota from '../../icons/guide-section-three/rabota.svg';
+import Cntm from '../../icons/guide-section-three/cntm.svg';
+
 export function GuideSectionThree(props: JSX.IntrinsicElements['section']) {
   // const [buttonInPanels, setButtonInPanels] = useState<[{}]>([{}]);
   const { className, ...rest } = props;
@@ -15,7 +22,7 @@ export function GuideSectionThree(props: JSX.IntrinsicElements['section']) {
       <Container>
         <Row className="justify-center">
           <Column className="lg:w-10/12 xl:w-8/12">
-            <div>
+            <>
               <div className="flex items-center column mb-5">
                 <Circle className="lg:-ml-20">3</Circle>
                 <h3 className="ml-8 font-medium text-2xl">
@@ -26,7 +33,7 @@ export function GuideSectionThree(props: JSX.IntrinsicElements['section']) {
                 Dacă ai nevoie de ghidare adăugătoare, îți oferim câteva surse
                 adiționale:
               </span>
-            </div>
+            </>
 
             {data.map((item, index) => (
               <Row className="mb-10 mt-10" key={index}>
@@ -34,17 +41,15 @@ export function GuideSectionThree(props: JSX.IntrinsicElements['section']) {
                   <Panel title={item.title}>
                     {item.children.map((item, index) => {
                       return (
-                        <>
+                        <div className="mt-5" key={index}>
                           {item.button && (
-                            <Link href="#">
-                              <Button
-                                size="small"
-                                variant="outline"
-                                className="mb-5"
-                              >
-                                <span>{item.buttonSlug}</span>
-                              </Button>
-                            </Link>
+                            <Button
+                              size="small"
+                              variant="outline"
+                              className="mb-5 cursor-pointer"
+                            >
+                              <span>{item.buttonSlug}</span>
+                            </Button>
                           )}
                           <ExternalCard
                             key={index}
@@ -52,8 +57,10 @@ export function GuideSectionThree(props: JSX.IntrinsicElements['section']) {
                             header={item.title}
                             description={item.description}
                             links={item.links}
+                            className="mt-5"
+                            icon={item.Icon}
                           />
-                        </>
+                        </div>
                       );
                     })}
                   </Panel>
@@ -74,7 +81,7 @@ const data: {
     buttonSlug?: string;
     title: string;
     description: string;
-    icon: string;
+    Icon: React.ReactNode | string;
     links: { title: string; slug: string }[];
   }[];
 }[] = [
@@ -86,15 +93,59 @@ const data: {
         title: 'Centre de ghidare în carieră',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis dignissim egestas morbi ac eget nulla tortor.',
-        icon: '',
+        Icon: Building,
         links: [
           {
-            title: 'Something1',
+            title: '01',
             slug: 'Something',
           },
           {
-            title: 'Something1',
+            title: '02',
             slug: 'Something',
+          },
+          {
+            title: '03',
+            slug: 'Something',
+          },
+          {
+            title: '04',
+            slug: 'Something',
+          },
+        ],
+      },
+      {
+        title: 'Psiholog',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis dignissim egestas morbi ac eget nulla tortor.',
+        Icon: Psycho,
+        links: [
+          {
+            title: 'SFERA',
+            slug: 'Something',
+          },
+          {
+            title: 'reThink Center',
+            slug: 'Something',
+          },
+          {
+            title: '03',
+            slug: 'Something',
+          },
+          {
+            title: '04',
+            slug: 'Something',
+          },
+        ],
+      },
+      {
+        title: 'Mentorat',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis dignissim egestas morbi ac eget nulla tortor.',
+        Icon: Mentor,
+        links: [
+          {
+            title: 'mentorme.md',
+            slug: 'mentorme.md',
           },
         ],
       },
@@ -106,14 +157,26 @@ const data: {
       {
         button: true,
         buttonSlug: 'Voluntariat',
-        title: 'Centre de ghidare în carieră',
+        title: 'Consiliul Național al Tineretului din Moldova',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis dignissim egestas morbi ac eget nulla tortor.',
-        icon: '',
+        Icon: Cntm,
         links: [
           {
-            title: 'Something1',
-            slug: 'Something',
+            title: 'cntm.md',
+            slug: 'cntm.md',
+          },
+        ],
+      },
+      {
+        title: 'Consiliul Național al Tineretului din Moldova',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis dignissim egestas morbi ac eget nulla tortor.',
+        Icon: Rabota,
+        links: [
+          {
+            title: 'rabota.md',
+            slug: 'rabota.md',
           },
         ],
       },
