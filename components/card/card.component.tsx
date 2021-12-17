@@ -53,7 +53,8 @@ export function Card(props: CardProps) {
           <a
             href={linkUrl}
             className="inline-flex items-center justify-center"
-            target="_blank" rel="noreferrer"
+            target="_blank"
+            rel="noreferrer"
           >
             <span className="mr-2">{linkText}</span>
             <svg
