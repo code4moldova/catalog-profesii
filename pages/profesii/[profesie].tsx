@@ -8,6 +8,7 @@ import { ExternalCard } from '../../components/external-card/external-card.compo
 import { Circle } from '../../components/circle/circle.component';
 import { SalaryGrowth } from '../../components/salary-growth/salary-growth.component';
 import { CareerGrowth } from '../../components/career-growth/career-growth.component';
+import Link from 'next/link';
 
 const Profesie: NextPage = () => (
   <>
@@ -140,13 +141,18 @@ const Profesie: NextPage = () => (
               >
                 <div className="grid gap-5">
                   {jobInfo.linksStudy.map((info, index) => (
-                    <ExternalCard
+                    <a
                       key={index}
                       href={info.href}
-                      icon={info.icon}
-                      header={info.header}
-                      description={info.description}
-                    />
+                      target="_blank"
+                      rel="noopener nofollow noreferrer"
+                    >
+                      <ExternalCard
+                        icon={info.icon}
+                        header={info.header}
+                        description={info.description}
+                      />
+                    </a>
                   ))}
                 </div>
               </Panel>
@@ -161,13 +167,18 @@ const Profesie: NextPage = () => (
               >
                 <div className="grid gap-5">
                   {jobInfo.linksDevelop.map((info, index) => (
-                    <ExternalCard
+                    <a
                       key={index}
                       href={info.href}
-                      icon={info.icon}
-                      header={info.header}
-                      description={info.description}
-                    />
+                      target="_blank"
+                      rel="noopener nofollow noreferrer"
+                    >
+                      <ExternalCard
+                        icon={info.icon}
+                        header={info.header}
+                        description={info.description}
+                      />
+                    </a>
                   ))}
                 </div>
               </Panel>
@@ -182,13 +193,18 @@ const Profesie: NextPage = () => (
               >
                 <div className="grid gap-5">
                   {jobInfo.linksPractice.map((info, index) => (
-                    <ExternalCard
+                    <a
                       key={index}
                       href={info.href}
-                      icon={info.icon}
-                      header={info.header}
-                      description={info.description}
-                    />
+                      target="_blank"
+                      rel="noopener nofollow noreferrer"
+                    >
+                      <ExternalCard
+                        icon={info.icon}
+                        header={info.header}
+                        description={info.description}
+                      />
+                    </a>
                   ))}
                 </div>
               </Panel>
@@ -203,13 +219,19 @@ const Profesie: NextPage = () => (
               >
                 <div className="grid gap-5">
                   {jobInfo.linksWork.map((info, index) => (
-                    <ExternalCard
+                    <a
                       key={index}
                       href={info.href}
-                      icon={info.icon}
-                      header={info.header}
-                      description={info.description}
-                    />
+                      target="_blank"
+                      rel="noopener nofollow noreferrer"
+                    >
+                      <ExternalCard
+                        key={index}
+                        icon={info.icon}
+                        header={info.header}
+                        description={info.description}
+                      />
+                    </a>
                   ))}
                 </div>
               </Panel>

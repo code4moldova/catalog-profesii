@@ -22,11 +22,13 @@ export const Card: Story<CardProps> = (args) => {
   return (
     <Container>
       <Row>
-        <Column className="w-1/2">
-          <Component {...args} />
-        </Column>
-        <Column className="w-1/2">
-          <Component {...args} />
+        <Column className="flex flex-col sm:flex-row">
+          <Column className="sm:w-1/2">
+            <Component {...args} />
+          </Column>
+          <Column className="sm:w-1/2 mt-10 sm:mt-0">
+            <Component {...args} />
+          </Column>
         </Column>
       </Row>
     </Container>
